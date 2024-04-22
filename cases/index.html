@@ -20,7 +20,7 @@
     
     
       
-        <title>Популярные кейсы - TINKOFF INVEST API</title>
+        <title>Популярные кейсы и их решение - TINKOFF INVEST API</title>
       
     
     
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Популярные кейсы
+              Популярные кейсы и их решение
             
           </span>
         </div>
@@ -523,7 +523,7 @@
           
   
   <span class="md-ellipsis">
-    Популярные кейсы
+    Популярные кейсы и их решение
   </span>
   
 
@@ -534,7 +534,7 @@
         
   
   <span class="md-ellipsis">
-    Популярные кейсы
+    Популярные кейсы и их решение
   </span>
   
 
@@ -565,7 +565,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Начало работы и получение информации об аккаунте
+      Получить информации об аккаунте
     </span>
   </a>
   
@@ -587,14 +587,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Ошибки с сертификатом">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Ручная загрузка сертификата
+      Загрузить сертификат вручную
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2182,7 +2188,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Начало работы и получение информации об аккаунте
+      Получить информации об аккаунте
     </span>
   </a>
   
@@ -2204,14 +2210,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Ошибки с сертификатом">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Ручная загрузка сертификата
+      Загрузить сертификат вручную
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2233,7 +2245,7 @@
   
 
 
-  <h1>Популярные кейсы</h1>
+  <h1>Популярные кейсы и их решение</h1>
 
 <p>Чтобы понимать алгоритм выполнения основных задач, ознакомьтесь с доступными SDK в разделе <a href="https://russianinvestments.github.io/investAPI/faq_python/"><strong>Языки программирования</strong></a>.   </p>
 <p>Также рекомендуем прочитать <a href="https://habr.com/ru/companies/tinkoff/articles/709166/">статью о создании торгового робота</a> — в ней описаны популярные сценарии для пользователей Tinkoff Invest API.</p>
@@ -2249,7 +2261,7 @@
 <li>Получите список активных заявок через метод <a href="/investAPI/orders#getorders">GetOrders</a> и по параметру <code>order_id</code> проверьте, есть ли заявка в списке активных.</li>
 </ol>
 <p>Информацию об исполненной заявке можно получить через метод <a href="/investAPI/orders#getorderstate">GetOrderState</a> по параметру <code>order_id</code>.</p>
-<h2 id="_2">Начало работы и получение информации об аккаунте</h2>
+<h2 id="_2">Получить информации об аккаунте</h2>
 <p>Чтобы получить информацию об аккаунте:</p>
 <ol>
 <li>Вызовите метод <a href="/investAPI/users#getaccounts">GetAccounts</a> для получения списка счетов, их статусов и типов.</li>
@@ -2285,7 +2297,7 @@
 </ul>
 <p>Часто эта проблема возникает из-за недействительного сертификата, который используется в приложении.</p>
 <p>Выпустите новый сертификат — например, через команду <code>openssl s_client -connect invest-public-api.tinkoff.ru:443</code>, и импортируйте его.</p>
-<h2 id="_5">Ручная загрузка сертификата</h2>
+<h3 id="_5">Загрузить сертификат вручную</h3>
 <p>Сертификат можно загрузить вручную. Пример шагов для Windows и Google Chrome:</p>
 <ol>
 <li>Зайдите на <a href="https://www.tinkoff.ru/">сайт Tinkoff</a>.</li>
