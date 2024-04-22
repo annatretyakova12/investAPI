@@ -2423,20 +2423,19 @@
 <p>Нажмите <strong>Add proto directory</strong> и укажите папку со скачанными proto-контрактами сервиса Tinkoff Invest API. Также также можно нажать <strong>Add proto files</strong> и выбрать все proto-файлы из папки вручную.</p>
 </li>
 </ol>
-<p><a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Скачать актуальную версию контрактов Tinkoff Invest API</a>.</p>
+<p><a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Скачать актуальную версию контрактов Tinkoff Invest API</a></p>
 <blockquote>
 <p><strong>Важно</strong>
-Tinkoff Invest API использует <code>google.api.field_behavior</code>-нотацию к полям контрактов.
-Скачайте <a href="https://github.com/googleapis/googleapis/blob/master/google/api/field_behavior.proto">field_behavior.proto</a> и сохраните его в папке <code>&lt;contracts_dir&gt;\google\api</code>, где <code>&lt;contracts_dir&gt;</code> - папка с контрактами Tinkoff Invest API.
-   <img src="/investAPI/img/Kreya-3.png" width="650"></p>
+Tinkoff Invest API использует <code>google.api.field_behavior</code>-нотацию к полям контрактов. Скачайте <a href="https://github.com/googleapis/googleapis/blob/master/google/api/field_behavior.proto">field_behavior.proto</a> и сохраните его в папке <code>&lt;contracts_dir&gt;\google\api</code>, где <code>&lt;contracts_dir&gt;</code> — папка с контрактами Tinkoff Invest API.</p>
 </blockquote>
+<p><img src="/investAPI/img/Kreya-3.png" width="650"></p>
 <ol>
 <li>Сохраните изменения и нажмите <strong>Back</strong>.</li>
 <li>В левом окне нажмите на появившуюся папку <strong>Tinkoff</strong>. Укажите Endpoint сервиса — <code>https://invest-public-api.tinkoff.ru:443</code>.</li>
 </ol>
 <p>Остальные настройки укажите в соответствии со скриншотом. Обратите внимание на блок <strong>Metadata</strong>:
 в нём нужно указать заголовок <code>Authorization</code>, в значении которого передаётся строка <code>Bearer &lt;токен доступа&gt;</code>.
-   <img src="/investAPI/img/Kreya-4.png" width="650"></p>
+<img src="/investAPI/img/Kreya-4.png" width="650"></p>
 <p><a href="/investAPI/token/">Как получить токен доступа</a></p>
 <p>После этого вы сможете выполнять запросы к сервису.
 <img src="/investAPI/img/Kreya-5.png" width="650"></p>
