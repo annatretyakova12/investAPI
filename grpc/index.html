@@ -2411,50 +2411,41 @@
 <p>Бесплатный gRPC-клиент с довольно широким набором функционала и возможностей.
 Его можно скачать с официального сайта <a href="https://kreya.app/">kreya.app</a>.</p>
 <ol>
-<li>
-<p>После установки и запуска приложения в меню выберите <strong>Project</strong> → <strong>Importers</strong>.
+<li><p>После установки и запуска приложения в меню выберите <strong>Project</strong> → <strong>Importers</strong>.
 <img src="/investAPI/img/Kreya-1.png" width="650"></p>
 </li>
-<li>
-<p>Нажмите <strong>New importer</strong>. Укажите название источника данных и его тип — <strong>gRPC proto files</strong>.
+<li><p>Нажмите <strong>New importer</strong>. Укажите название источника данных и его тип — <strong>gRPC proto files</strong>.
 <img src="/investAPI/img/Kreya-2.png" width="650"></p>
 </li>
-<li>
-<p>Нажмите <strong>Add proto directory</strong> и укажите папку со скачанными proto-контрактами сервиса Tinkoff Invest API. Также также можно нажать <strong>Add proto files</strong> и выбрать все proto-файлы из папки вручную.
+<li><p>Нажмите <strong>Add proto directory</strong> и укажите папку со скачанными proto-контрактами сервиса Tinkoff Invest API. Также также можно нажать <strong>Add proto files</strong> и выбрать все proto-файлы из папки вручную.
 <img src="/investAPI/img/Kreya-3.png" width="650"></p>
-</li>
-</ol>
 <p><a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Скачать актуальную версию контрактов Tinkoff Invest API</a></p>
+<p><strong>Важно</strong></p>
 <p>Tinkoff Invest API использует <code>google.api.field_behavior</code>-нотацию к полям контрактов. Скачайте <a href="https://github.com/googleapis/googleapis/blob/master/google/api/field_behavior.proto">field_behavior.proto</a> и сохраните его в папке <code>&lt;contracts_dir&gt;\google\api</code>, где <code>&lt;contracts_dir&gt;</code> — папка с контрактами Tinkoff Invest API.</p>
-<ol>
-<li>
-<p>Сохраните изменения и нажмите <strong>Back</strong>.</p>
 </li>
-<li>
-<p>В левом окне нажмите на папку <strong>Tinkoff</strong>. Укажите Endpoint сервиса — <code>https://invest-public-api.tinkoff.ru:443</code>.</p>
+<li><p>Сохраните изменения и нажмите <strong>Back</strong>.</p>
 </li>
-</ol>
+<li><p>В левом окне нажмите на папку <strong>Tinkoff</strong>. Укажите Endpoint сервиса — <code>https://invest-public-api.tinkoff.ru:443</code>.</p>
 <p>Остальные настройки укажите в соответствии со скриншотом. Обратите внимание на блок <strong>Metadata</strong>:
 в нём нужно указать заголовок <code>Authorization</code>, в значении которого передаётся строка <code>Bearer &lt;токен доступа&gt;</code>.
 <img src="/investAPI/img/Kreya-4.png" width="650"></p>
 <p><a href="/investAPI/token/">Как получить токен доступа</a></p>
-<ol>
-<li>После этого можно выполнять запросы к сервису.
-<img src="/investAPI/img/Kreya-5.png" width="650"></li>
+</li>
+<li><p>После этого можно выполнять запросы к сервису.
+<img src="/investAPI/img/Kreya-5.png" width="650"></p>
+</li>
 </ol>
 <p>В Kreya можно посмотреть служебные заголовки ответа сервера:</p>
 <ul>
-<li>
-<p><strong>x-ratelimit-limit</strong> — текущий лимит пользователя по данному методу;</p>
+<li><p><strong>x-ratelimit-limit</strong> — текущий лимит пользователя по данному методу;</p>
 </li>
-<li>
-<p><strong>x-ratelimit-remaining</strong> — количество оставшихся запросов данного типа в минуту;</p>
+<li><p><strong>x-ratelimit-remaining</strong> — количество оставшихся запросов данного типа в минуту;</p>
 </li>
-<li>
-<p><strong>x-ratelimit-reset</strong> — время в секундах до обнуления счётчика запросов. </p>
+<li><p><strong>x-ratelimit-reset</strong> — время в секундах до обнуления счётчика запросов. </p>
 </li>
 </ul>
 <p><img src="/investAPI/img/Kreya-6.png" width="650"></p>
+
 <h4 id="proto-">Обновление proto-контрактов</h4>
 <p>Для получения доступа к новому функионалу, который появился после обновления версии, необходимо актуализировать proto-контракты. 
 Для этого необходимо заново скачать <a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">контракты</a>, 
