@@ -2368,9 +2368,9 @@
   <h1>gRPC</h1>
 
 <h2 id="_1">Протокол взаимодействия</h2>
-<p>Вся работа с Tinkoff Invest API происходит по протоколу gRPC. </p>
+<p>Вся работа с Tinkoff Invest API ведётся по протоколу gRPC. </p>
 <p><a href="https://grpc.io/docs/">Документация gRPC</a></p>
-<p>Одна из ключевых особенностей протокола — <a href="https://grpc.io/docs/what-is-grpc/core-concepts/">bidirectional streaming</a>. Это особый режим работы, при котором открывается одно стрим-соединение, в которое могут отправлять сообщения оба участника взаимодействия. Это позволяет более гибко и оперативно реализовать работу. </p>
+<p>Одна из ключевых особенностей протокола — <a href="https://grpc.io/docs/what-is-grpc/core-concepts/">bidirectional streaming</a>. Это особый режим работы, при котором открывается одно стрим-соединение, в которое оба участника взаимодействия могут отправлять сообщения. Это позволяет более гибко и оперативно реализовать работу. </p>
 <p>Например, bidirectional streaming <a href="/investAPI/head-marketdata/">сервиса котировок</a> 
 в одном и том же соединении принимает сообщения об изменении статуса подписки и предоставляет различные 
 виды биржевой информации — стаканы, свечи, поток обезличенных сделок и другие.</p>
@@ -2389,21 +2389,21 @@
 <p><a href="/investAPI/url_difference/">Подробнее про различия контуров</a></p>
 <h2 id="trackingid">trackingId запросов</h2>
 <p>Заголовок <code>x-tracking-id</code> добавляется во все ответы unary-методов Tinkoff Invest API. </p>
-<p>Это уникальный uuid-идентификатор запроса, который нужен технической поддержке для разбора 
+<p>Это уникальный UUID запроса, который нужен технической поддержке для разбора 
 инцидентов. При обращении в службу технической поддержки обязательно указывайте <code>x-tracking-id</code> запроса — 
 это ускорит решение вашего вопроса. </p>
 <blockquote>
-<p>Для сообщений управления статусом подписки в рамках stream-соединений <code>x-tracking-id</code> передаётся в
+<p>В рамках stream-соединений для сообщений управления статусом подписки <code>x-tracking-id</code> передаётся в
 виде выходного параметра.</p>
 </blockquote>
 <h2 id="_4">Полный текст ошибки</h2>
 <p>Если при вызове метода Tinkoff Invest API происходит ошибка, в ответе возвращается параметр <code>message</code>.
 В нём можно посмотреть полный текст описания ошибки. </p>
-<p>В <a href="https://kreya.app">Kreya</a> текст ошибки можно посмотреть на вкладке <strong>Header</strong> в поле <strong>message</strong>.</p>
+<p>В <a href="/investAPI/grpc/#kreya">Kreya</a> текст ошибки можно посмотреть на вкладке <strong>Header</strong> в поле <strong>message</strong>.</p>
 <h2 id="appname">AppName запросов</h2>
 <p>В запросы к Tinkoff Invest API можно добавлять служебный заголовок <strong>x-app-name</strong> — он 
 нужен для сбора статистики по используемым инструментам. </p>
-<p>Если вы разработчик SDK, рекомендуем использовать AppName формата <code>&lt;Ник в GitHub&gt;.&lt;Название репозитория&gt;</code>. Например, <code>user.tinkoffSDK</code>.</p>
+<p>Если вы разработчик SDK, рекомендуем использовать AppName формата <code>&lt;Ник в GitHub&gt;.&lt;Название репозитория&gt;</code> — например, <code>user.tinkoffSDK</code>.</p>
 <h2 id="_5">Рекомендации по тестированию методов</h2>
 <p>Для тестирования работы Tinkoff Invest API можно использовать любой доступный gRPC-клиент.</p>
 <p>Ниже приведены краткие инструкции по настройке двух наиболее популярных клиентов — Kreya и BloomRPC, а также ссылка на гайд по настройке встроенного gRPC-клиента IntelliJ от энтузиаста.</p>
@@ -2469,15 +2469,14 @@
 <p><a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Скачать актуальную версию контрактов Tinkoff Invest API</a></p>
 <p><img src="/investAPI/img/Bloom-1.png" width="650"></p>
 </li>
-<li><p>Укажите адрес сервера — <code>invest-public-api.tinkoff.ru:443</code> — и заполните поле <code>metadata</code>: подставьте своё значение <a href="/investAPI/token/">токена доступа</a>.</p>
+<li><p>Укажите адрес сервера — <code>invest-public-api.tinkoff.ru:443</code> — и заполните поле <strong>metadata</strong>: подставьте своё значение <a href="/investAPI/token/">токена доступа</a>.</p>
 <p><code>{
    &quot;Authorization&quot;: &quot;Bearer t.QtEo8ahkNFX4RTpbqp0u4z4GDZq27HzUp6AotJASBx7_DVqmqZMHfM2Cy7JmUjS80boI9eVg&quot;
 }</code></p>
 <p><img src="/investAPI/img/Bloom-2.png" width="650"></p>
 </li>
-<li><p>При выполнении запросов обязательно указывайте тип TLS-подключения.</p>
+<p>При выполнении запросов обязательно указывайте тип TLS-подключения.</p>
 <p><img src="/investAPI/img/Bloom-3.png" width="650"></p>
-</li>
 </ol>
 
 <p>После этого можно выполнять запросы к сервису.</p>
