@@ -737,7 +737,7 @@
           <li class="md-nav__item">
   <a href="#grps-intellij" class="md-nav__link">
     <span class="md-ellipsis">
-      Встроенный GRPS клиент IntelliJ
+      Встроенный gRPS-клиент IntelliJ
     </span>
   </a>
   
@@ -2336,7 +2336,7 @@
           <li class="md-nav__item">
   <a href="#grps-intellij" class="md-nav__link">
     <span class="md-ellipsis">
-      Встроенный GRPS клиент IntelliJ
+      Встроенный gRPS-клиент IntelliJ
     </span>
   </a>
   
@@ -2452,33 +2452,41 @@
 замените скачанные файлы в папке проекта и нажмите <strong>Run all importers</strong> в левом верхнем углу приложения. 
 Убедитесь, что все proto-контракты имеют актуальную версию.</p>
 <blockquote>
-<p>Не храните бекапы и копии контрактов в одной папке с актуальными.
-<img src="/investAPI/img/Kreya-update_contracts.png" width="650"></p>
+<p>Не храните бекапы и копии контрактов в одной папке с актуальными.</p>
+</blockquote>
+<p><img src="/investAPI/img/Kreya-update_contracts.png" width="650"></p>
+<blockquote>
 <p>Если вы получили ошибку <code>The referenced gRPC method is not imported.</code>, убедитесь, что вы очистили проект в Kreya от прошлых загруженных контрактов. 
 Всегда проверяйте путь до папки с загружаемыми контрактами, полное наличие всех proto-файлов и их соответствие актуальной версии <a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Tinkoff Invest API</a>. 
 Изменение proto-файлов повлечет за собой ошибку их прочтения у gRPS-клиентов.</p>
 </blockquote>
 <h3 id="bloomrpc">BloomRPC</h3>
-<p>Скачать данный клиент можно по ссылке: <a href="https://github.com/uw-labs/bloomrpc/releases">bloomrpc releases</a>.</p>
-<p>Интерфейс утилиты достаточно прост, для старта работы требуется указать домен сервиса и импортировать
+<p><a href="https://github.com/uw-labs/bloomrpc/releases">Скачать клиент</a></p>
+<p>Интерфейс утилиты простой — чтобы начать работу, нужно указать домен сервиса и импортировать
 все proto-файлы. </p>
 <ol>
-<li>Импортируйте скаченные proto-контракты сервиса. Скачать актуальную версию контрактов можно по ссылке на официальном GitHub: <a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Tinkoff Invest API</a>.
-<img alt="Интерфейс BloomRPC" src="/investAPI/img/Bloom-1.png" title="Интерфейс BloomRPC" /></li>
-<li>Укажите адрес сервера invest-public-api.tinkoff.ru:443 и заполните поле metadata значением (подставьте своё значение <a href="/investAPI/token/">токена доступа</a>).</li>
-</ol>
+<li><p>Импортируйте скачанные proto-контракты сервиса. </p>
+<p><a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Скачать актуальную версию контрактов Tinkoff Invest API</a></p>
+<p><img src="/investAPI/img/Bloom-1.png" width="650"></p>
+</li>
+<li><p>Укажите адрес сервера — <code>invest-public-api.tinkoff.ru:443</code> — и заполните поле <code>metadata</code>: подставьте своё значение <a href="/investAPI/token/">токена доступа</a>.</p>
 <p><code>{
-   "Authorization": "Bearer t.QtEo8ahkNFX4RTpbqp0u4z4GDZq27HzUp6AotJASBx7_DVqmqZMHfM2Cy7JmUjS80boI9eVg"
-}</code>
-<img alt="Интерфейс BloomRPC" src="/investAPI/img/Bloom-2.png" title="Интерфейс BloomRPC" />
-3. При выполнении запросов следует обязательно указывать тип TLS-подключения:
-<img alt="Интерфейс BloomRPC" src="/investAPI/img/Bloom-3.png" title="Интерфейс BloomRPC" />
-4. Теперь вы можете выполнять запросы к сервису.
-<img alt="Интерфейс BloomRPC" src="/investAPI/img/Bloom-4.png" title="Интерфейс BloomRPC" /></p>
-<p>BloomRPC не позволяет увидеть заголовки ответа сервера, поэтому команда Tinkoff Invest API 
-рекомендует использовать Kreya.</p>
-<h3 id="grps-intellij">Встроенный GRPS клиент IntelliJ</h3>
-<p><a href="https://github.com/tinkoff/investAPI/issues/4">Использование встроенного в продукты Intellij gRPC-клиента</a></p>
+   &quot;Authorization&quot;: &quot;Bearer t.QtEo8ahkNFX4RTpbqp0u4z4GDZq27HzUp6AotJASBx7_DVqmqZMHfM2Cy7JmUjS80boI9eVg&quot;
+}</code></p>
+<p><img src="/investAPI/img/Bloom-2.png" width="650"></p>
+</li>
+<li><p>При выполнении запросов обязательно указывайте тип TLS-подключения.</p>
+<p><img src="/investAPI/img/Bloom-3.png" width="650"></p>
+</li>
+</ol>
+
+<p>После этого можно выполнять запросы к сервису.</p>
+<p><img src="/investAPI/img/Bloom-4.png" width="650"></p>
+<blockquote>
+<p>В BloomRPC нельзя увидеть заголовки ответов сервера, поэтому мы рекомендуем использовать Kreya.</p>
+</blockquote>
+<h3 id="grps-intellij">Встроенный gRPS-клиент IntelliJ</h3>
+<p><a href="https://github.com/tinkoff/investAPI/issues/4">Инструкция — использование встроенного в продукты Intellij gRPC-клиента</a></p>
 
 
 
