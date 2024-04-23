@@ -20,7 +20,7 @@
     
     
       
-        <title>GRPC - TINKOFF INVEST API</title>
+        <title>gRPC - TINKOFF INVEST API</title>
       
     
     
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GRPC
+              gRPC
             
           </span>
         </div>
@@ -607,7 +607,7 @@
           
   
   <span class="md-ellipsis">
-    GRPC
+    gRPC
   </span>
   
 
@@ -618,7 +618,7 @@
         
   
   <span class="md-ellipsis">
-    GRPC
+    gRPC
   </span>
   
 
@@ -2365,7 +2365,7 @@
   
 
 
-  <h1>GRPC</h1>
+  <h1>gRPC</h1>
 
 <h2 id="_1">Протокол взаимодействия</h2>
 <p>Вся работа с Tinkoff Invest API происходит по протоколу gRPC. </p>
@@ -2411,14 +2411,14 @@
 <p>Бесплатный gRPC-клиент с довольно широким набором функционала и возможностей.
 Его можно скачать с официального сайта <a href="https://kreya.app/">kreya.app</a>.</p>
 <ol>
-<li><p>После установки и запуска приложения в меню выберите <strong>Project</strong> → <strong>Importers</strong>.
-<img src="/investAPI/img/Kreya-1.png" width="650"></p>
+<li><p>После установки и запуска приложения в меню выберите <strong>Project</strong> → <strong>Importers</strong>.</p>
+<p><img src="/investAPI/img/Kreya-1.png" width="650"></p>
 </li>
-<li><p>Нажмите <strong>New importer</strong>. Укажите название источника данных и его тип — <strong>gRPC proto files</strong>.
-<img src="/investAPI/img/Kreya-2.png" width="650"></p>
+<li><p>Нажмите <strong>New importer</strong>. Укажите название источника данных и его тип — <strong>gRPC proto files</strong>.</p>
+<p><img src="/investAPI/img/Kreya-2.png" width="650"></p>
 </li>
-<li><p>Нажмите <strong>Add proto directory</strong> и укажите папку со скачанными proto-контрактами сервиса Tinkoff Invest API. Также можно нажать <strong>Add proto files</strong> и выбрать все proto-файлы из папки вручную.
-<img src="/investAPI/img/Kreya-3.png" width="650"></p>
+<li><p>Нажмите <strong>Add proto directory</strong> и укажите папку со скачанными proto-контрактами сервиса Tinkoff Invest API. Также можно нажать <strong>Add proto files</strong> и выбрать все proto-файлы из папки вручную.</p>
+<p><img src="/investAPI/img/Kreya-3.png" width="650"></p>
 <p><a href="https://github.com/RussianInvestments/investAPI/tree/main/src/docs/contracts">Скачать актуальную версию контрактов Tinkoff Invest API</a></p>
 <p><strong>Важно</strong></p>
 <p>Tinkoff Invest API использует <code>google.api.field_behavior</code>-нотацию к полям контрактов. Скачайте <a href="https://github.com/googleapis/googleapis/blob/master/google/api/field_behavior.proto">field_behavior.proto</a> и сохраните его в папке <code>&lt;contracts_dir&gt;\google\api</code>, где <code>&lt;contracts_dir&gt;</code> — папка с контрактами Tinkoff Invest API.</p>
@@ -2427,12 +2427,12 @@
 </li>
 <li><p>Слева нажмите на папку <strong>Tinkoff</strong>. Укажите endpoint сервиса — <code>https://invest-public-api.tinkoff.ru:443</code>.</p>
 <p>Остальные настройки укажите в соответствии со скриншотом. Обратите внимание на блок <strong>Metadata</strong>:
-в нём нужно указать заголовок <code>Authorization</code>, в значении которого передаётся строка <code>Bearer &lt;токен доступа&gt;</code>.
-<img src="/investAPI/img/Kreya-4.png" width="650"></p>
+в нём нужно указать заголовок <code>Authorization</code>, в значении которого передаётся строка <code>Bearer &lt;токен доступа&gt;</code>.</p>
+<p><img src="/investAPI/img/Kreya-4.png" width="650"></p>
 <p><a href="/investAPI/token/">Как получить токен доступа</a></p>
 </li>
-<li><p>После этого можно выполнять запросы к сервису.
-<img src="/investAPI/img/Kreya-5.png" width="650"></p>
+<li><p>После этого можно выполнять запросы к сервису.</p>
+<p><img src="/investAPI/img/Kreya-5.png" width="650"></p>
 </li>
 </ol>
 <p>В Kreya можно посмотреть служебные заголовки ответа сервера:</p>
