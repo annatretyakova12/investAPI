@@ -2164,7 +2164,8 @@
   <h1>SLA</h1>
 
 <h3 id="_1">Сколько действует ключ идемпотентности на стороне брокера</h3>
-<p>Ключ идемпотентности, который передаётся как параметр <code>order_id</code> в методе <a href="/investAPI/orders#postorder">postOrder</a> и парамтер <code>idempotency_key</code> в методе <a href="/investAPI/orders#replaceorder">replaceOrder</a>, хранится на стороне брокера и действует один год.</p>
+<p>Ключ идемпотентности передаётся как параметр <code>order_id</code> в методе <a href="/investAPI/orders#postorder">postOrder</a> и параметр <code>idempotency_key</code> в методе <a href="/investAPI/orders#replaceorder">replaceOrder</a>.</p>
+<p>Он хранится на стороне брокера и действует один год.</p>
 <p>Счётчик стрим-соединений обновляется каждые 2 минуты.</p>
 
 
