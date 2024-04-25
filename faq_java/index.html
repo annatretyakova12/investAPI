@@ -2267,7 +2267,7 @@
 
 <h3 id="sdk">Официальный SDK</h3>
 <ul>
-<li><a href="https://github.com/RussianInvestments/invest-api-java-sdk">invest-api-java-sdk</a></li>
+<li><a href="https://github.com/RussianInvestments/invest-api-java-sdk">invest-api-java-sdk</a>.</li>
 <li><a href="https://github.com/RussianInvestments/invest-api-java-sdk/blob/main/example/src/main/java/ru/tinkoff/piapi/example/Example.java">Примеры подключения и получения данных</a>.</li>
 </ul>
 <h3 id="_1">Основные классы для работы</h3>
@@ -2277,21 +2277,21 @@
 <p> Для автоматической проверки работоспособности канала при иницииализации используйте метод <code>io.grpc.ManagedChannelBuilder#keepAliveTime</code>. Допустимое время <code>keepAlive</code> — не меньше 10 секунд.</p>
 </li>
 <li><p><strong>Stub</strong> — сгенерированные классы клиентов для сервисов API. Есть три варианта клиентов:</p>
-<ol>
+<ul>
 <li>Не блокирующий — <code>ServiceNameStub</code>, например <code>InstrumentsServiceStub</code>. Все методы такого клиента принимают два параметра: запрос и обработчик результата вызова <code>io.grpc.stub.StreamObserver</code>. Методы обработчика будут вызваны после получения результата. Не рекомендуется выполнять блокирующие операции (I/O, любые операции с ожиданием завершения) в методах обработчика.</li>
-<li>Блокирующий — <code>ServiceNameBlockingStub</code>, например <code>InstrumentsServiceBlockingStub</code>. Все методы такого клиента принимают один параметр - запрос — и возвращают результат либо выбрасывают исключение. Вызов метода блокирует поток исполнения до получения результата или исключения.</li>
+<li>Блокирующий — <code>ServiceNameBlockingStub</code>, например <code>InstrumentsServiceBlockingStub</code>. Все методы такого клиента принимают один параметр — запрос — и возвращают результат либо выбрасывают исключение. Вызов метода блокирует поток исполнения до получения результата или исключения.</li>
 <li>Асинхронный — <code>ServiceNameFutureStub</code>, например <code>InstrumentsServiceFutureStub</code>. Все методы такого клиента принимают один параметр — запрос — и возвращают объект типа <code>com.google.common.util.concurrent.ListenableFuture</code>.</li>
-</ol>
+</ul>
 </li>
 </ul>
 
 <h3 id="_2">Таймаут запроса</h3>
-<p>В gRPC вместо таймаута используется <code>deadline</code> — время в будущем, до наступления которого выполнение вызова будет ожидаться. </p>
-<p>Если результат не получен и deadline наступил, возникнет ошибка с кодом <code>DEADLINE_EXCEEDED</code>. При этом может быть ситуация, когда на сервере API операция была обработана успешно. Поэтому для критичных действий используйте ключ идемпотентности.</p>
-<p>Рекомендуем устанавливать deadline через метод <code>io.grpc.stub.AbstractStub#withDeadlineAfter</code>.</p>
+<p>В gRPC вместо таймаута используется <code>deadline</code> — время в будущем, до наступления которого будет ожидаться выполнение вызова. </p>
+<p>Если результат не получен и deadline наступил, возникнет ошибка с кодом <code>DEADLINE_EXCEEDED</code>. При этом может быть ситуация, когда на сервере API операция была обработана успешно. Для критичных действий используйте ключ идемпотентности.</p>
+<p>Рекомендуем устанавливать <code>deadline</code> через метод <code>io.grpc.stub.AbstractStub#withDeadlineAfter</code>.</p>
 <blockquote>
 <p><strong>Обратите внимание</strong><br>
-Период времени начинает отсчитываться сразу после отправки запроса через этот метод.</p>
+Период времени начинает отсчитываться сразу после отправки запроса через метод.</p>
 </blockquote>
 <h3 id="_3">Метаданные</h3>
 <p>Метаданные — аналог заголовков в HTTP.</p>
@@ -2330,7 +2330,7 @@ var trailersCapture = new AtomicReference&lt;Metadata&gt;();
 instruments.withInterceptors(MetadataUtils.newCaptureMetadataInterceptor(headersCapture, trailersCapture)).getInstrumentBy(...);
 </code></pre>
 <p>После исполнения метода метаданные ответа вернутся в переменной <code>headersCapture</code>.</p>
-<p>При работе с методами клиентов конвертируйте исключения в статус через <code>io.grpc.Status#fromThrowable</code>. В поле <code>description</code> статуса будет <a href="https://russianinvestments.github.io/investAPI/errors/">код ошибки</a>.</p>
+<p>При работе с методами клиентов конвертируйте исключения в статус через <code>io.grpc.Status#fromThrowable</code>. В поле <code>description</code> статуса вернётся <a href="https://russianinvestments.github.io/investAPI/errors/">код ошибки</a>.</p>
 
 
 
