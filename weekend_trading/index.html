@@ -705,7 +705,7 @@
         
   
   <span class="md-ellipsis">
-    Алгоритмическая торговля
+    Алгоритмический трейдинг
   </span>
   
 
@@ -812,6 +812,15 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      Торговля по выходным
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       Котировки и рыночные данные
     </span>
   </a>
@@ -820,7 +829,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Торговый статус инструмента
     </span>
@@ -829,7 +838,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Свечи
     </span>
@@ -843,7 +852,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Выставление заявок
     </span>
@@ -853,7 +862,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Получить сделки
     </span>
@@ -2191,6 +2200,15 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      Торговля по выходным
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       Котировки и рыночные данные
     </span>
   </a>
@@ -2199,7 +2217,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Торговый статус инструмента
     </span>
@@ -2208,7 +2226,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Свечи
     </span>
@@ -2222,7 +2240,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Выставление заявок
     </span>
@@ -2232,7 +2250,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Получить сделки
     </span>
@@ -2264,13 +2282,28 @@
 
 
 <h1 id="_1">Особенности торговли в выходные дни и на внутреннем рынке</h1>
+<p>В Тинькофф реализовано несколько дополнительных режимов торгов, которые расширяют биржевую торговлю:</p>
+<ul>
+<li>
+<p><strong>Торговля по выходным</strong> — торги биржевыми инструментами в выходные дни, когда биржа не работает.</p>
+</li>
+<li>
+<p><strong>Фонды Тинькофф</strong> — торги фондами Тинькофф на внутреннем рынке.</p>
+</li>
+<li>
+<p><strong>Операции с инструментами, по которым приостановлена биржевая торговля</strong> — торги инструментами
+  иностранных компаний на внутреннем рынке.</p>
+</li>
+</ul>
+<h2 id="_2">Торговля по выходным</h2>
 <p>В Tinkoff Invest API можно совершать операции в выходные и нерабочие дни, когда торги на биржах не проводятся.
 Заключать сделки можно только по <a href="/investAPI/faq_instruments/#_20">ограниченному списку инструментов</a>.</p>
+<p>Торговля по выходным имеет ряд <a href="https://www.tinkoff.ru/finance/blog/weekend-trading/">особенностей</a>.</p>
 <p><a href="https://www.tinkoff.ru/finance/blog/weekend-trading/">Подробнее про особенности торговли в выходные</a></p>
-<h2 id="_2">Котировки и рыночные данные</h2>
+<h2 id="_3">Котировки и рыночные данные</h2>
 <p>Торговля ведётся на внутреннем рынке, поэтому <a href="/investAPI/marketdata/#gettradingstatus">торговый статус</a> инструмента будет <code>DEALER_NORMAL_TRADING</code>.</p>
 <p>Стакан можно получить через метод <a href="/investAPI/marketdata/#getorderbook">GetOrderBook</a>.</p>
-<h3 id="_3">Торговый статус инструмента</h3>
+<h3 id="_4">Торговый статус инструмента</h3>
 <p>Следует различать торговый статус инструмента на бирже и на внутреннем рынке. Возможность торговать инструментом на бирже в API имеет больший приоритет, чем торговля внутри брокера. </p>
 <p>Например, если на бирже торговый статус инструмента — <code>NORMAL_TRADING</code>, а на внутреннем рынке — <code>DEALER_NORMAL_TRADING</code>, в ответе методов вернётся <code>SECURITY_TRADING_STATUS_NORMAL_TRADING</code>. При этом изменение внутреннего статуса не будет транслироваться в стримы.</p>
 <p>Изменение биржевого статуса всегда передаётся в стрим. Если после изменения биржевого статуса торги на бирже недоступны, а внутренний рынок открыт для торговли, после биржевого статуса в стрим будет продублирован торговый статус внутреннего рынка. </p>
@@ -2321,9 +2354,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_4">Свечи</h3>
+<h3 id="_5">Свечи</h3>
 <p>Сейчас <a href="/investAPI/marketdata/#getcandles">свечи</a> за выходные дни недоступны в API.</p>
-<h2 id="_5">Выставление заявок</h2>
+<h2 id="_6">Выставление заявок</h2>
 <p>В выходные дни заявки можно выставлять с некоторыми ограничениями. Доступные <a href="/investAPI/orders/#ordertype">типы заявок</a> приведены в таблице.</p>
 <table>
 <thead>
@@ -2348,7 +2381,7 @@
 </tbody>
 </table>
 <p><a href="/investAPI/orders/#cancelorder">Отмена</a>, <a href="/investAPI/orders/#getorderstate">cтатус</a> и <a href="/investAPI/orders/#replaceorder">изменение</a> выставленной заявки работают в обычном режиме.</p>
-<h3 id="_6">Получить сделки</h3>
+<h3 id="_7">Получить сделки</h3>
 <p>Сделки, совершенные в выходные, доступны в <a href="/investAPI/orders/#tradesstream">стриме</a>.</p>
 
 
