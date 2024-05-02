@@ -2715,20 +2715,74 @@ FIGI, ISIN или связку тикер плюс класс—код. <a href=
 <h2 id="_20">Пагинация</h2>
 <p>В ряде методов сервиса используется пагинация. Структура <code>paging</code>:</p>
 <p><strong>В запросе</strong></p>
-<p>| Поле | Тип | Описание |
-| ————— | ———— | ——————————— |
-| <code>limit</code> |  <a href="#int64">int64</a> | Количество запрашиваемых записей |
-| <code>page_number</code> |  <a href="#int64">int64</a> | Номер страницы |
- &lt;!—— end Fields ——&gt;
- &lt;!—— end HasFields ——&gt;</p>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>limit</code></td>
+<td><a href="#int64">int64</a></td>
+<td>Количество запрашиваемых записей</td>
+</tr>
+<tr>
+<td><code>page_number</code></td>
+<td><a href="#int64">int64</a></td>
+<td>Номер страницы</td>
+</tr>
+<tr>
+<td>&lt;!—— end Fields ——&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;!—— end HasFields ——&gt;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><strong>В ответе</strong></p>
-<p>| Поле | Тип | Описание |
-| ————— | ———— | ——————————— |
-| <code>limit</code> |  <a href="#int64">int64</a> | Количество запрашиваемых записей |
-| <code>page_number</code> |  <a href="#int64">int64</a> | Номер страницы |
-| <code>total_count</code> |  <a href="#int64">int64</a> | Всего записей |
- &lt;!—— end Fields ——&gt;
- &lt;!—— end HasFields ——&gt;</p>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>limit</code></td>
+<td><a href="#int64">int64</a></td>
+<td>Количество запрашиваемых записей</td>
+</tr>
+<tr>
+<td><code>page_number</code></td>
+<td><a href="#int64">int64</a></td>
+<td>Номер страницы</td>
+</tr>
+<tr>
+<td><code>total_count</code></td>
+<td><a href="#int64">int64</a></td>
+<td>Всего записей</td>
+</tr>
+<tr>
+<td>&lt;!—— end Fields ——&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;!—— end HasFields ——&gt;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
