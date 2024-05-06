@@ -2602,7 +2602,7 @@
 <p>При вызове метода проверяется уникальность связки <code>order_id</code> и <code>account_id</code>:</p>
 <ul>
 <li>Если указанная пара не найдена, создаётся новое торговое поручение.</li>
-<li>Если связка уже есть — поручение с этим <code>order_id</code> по данному номеру счёта было выставлено раньше — метод <a href="/investAPI/orders#postorder">PostOrder</a> вернёт статус уже выставленного торгового поручения, то есть отработает согласно логике метода <a href="/investAPI/orders#getorderstate">GetOrderState</a>.</li>
+<li>Если связка уже есть, то есть поручение с этим <code>order_id</code> по данному номеру счёта было выставлено раньше, — метод <a href="/investAPI/orders#postorder">PostOrder</a> вернёт статус уже выставленного торгового поручения, и отработает согласно логике метода <a href="/investAPI/orders#getorderstate">GetOrderState</a>.</li>
 </ul>
 <h3 id="order_id">Можно ли увидеть ключ идемпотентности (<a href="/investAPI/orders#postorderrequest"><code>order_id</code></a>) в операциях, выставленных поручениях и т.п.?</h3>
 <p>Сейчас <code>order_id</code> используется только как ключ идемпотентности и не «прокидывается» в другие сущности системы.
