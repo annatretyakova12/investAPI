@@ -2506,29 +2506,25 @@
 корректно рассчитывать доходности и собирать статистику своей работы. </p>
 <p>Для этого можно использовать два метода:</p>
 <ul>
-<li><a href="/investAPI/operations#getoperations">getOperations</a> .</li>
-<li><a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> — является более предпочтительным.Возвращает список всех операций по указанному счёту.</li>
+<li><a href="/investAPI/operations#getoperations">getOperations</a>.</li>
+<li><a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.</li>
 </ul>
-<p>Метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> является более предпочтительным для использования и возвращает список всех операций по указанному счету.
-Данный метод возвращает информацию обо всех операциях, в том числе отмененных, поддерживает пагинацию и расширенную фильтрацию.
-Плюс данный метод обладает всеми преимуществами метода <a href="/investAPI/operations#getoperations">getOperations</a>.</p>
-<p>При работе с методами учитывайте <a href="/investAPI/operations_problems">особенности взаимодействия</a>.</p>
+<p><a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> — более предпочтительный для использования. Метод возвращает информацию обо всех операциях, в том числе отменённых, поддерживает пагинацию, расширенную фильтрацию и обладает всеми преимуществами метода <a href="/investAPI/operations#getoperations">getOperations</a>.</p>
+<p>Для вызова методов во входных параметрах достаточно указать <code>account_id</code>. При работе учитывайте <a href="/investAPI/operations_problems">особенности взаимодействия с методами</a>.</p>
 <blockquote>
 <p><strong>Важно</strong><br>
-Метод <a href="/investAPI/operations#getoperations">getOperations</a> не поддерживает опционы. Для получения информации по операциям с опционами
-мы рекомендуем использовать метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.</p>
+Метод <a href="/investAPI/operations#getoperations">getOperations</a>:</p>
+<ul>
+<li>Не поддерживает опционы. Для получения информации по операциям с опционами используйте метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.</li>
+<li>Возвращает отменённые операции — параметр <code>state</code>. Учитывайте это в алгоритме работы. </li>
+<li>Возвращает только последнюю тысячу операций.</li>
+</ul>
 </blockquote>
-<p>Для вызова данных методов во входных параметрах достаточно указать только <strong><code>account_id</code></strong>.</p>
-<p>Метод <a href="/investAPI/operations#getoperations">getOperations</a>, в том числе, возвращает отменённые операции (параметр <em>state</em>), это нужно обязательно учитывать
-в алгоритме работы. </p>
-<blockquote>
-<p><strong>Важно</strong><br>
-Метод <a href="/investAPI/operations#getoperations">getOperations</a> возвращает только последнюю тысячу операций.</p>
-</blockquote>
-<p>Команда TINKOFF INVEST API не рекомендует использовать метод получения операций для идентификации изменения
-статусов торговых поручений, т.к. некоторые операции могут происходить с задержкой относительно реального
-исполнения. Для получения статусов исполнения торговых поручений рекомендуется использовать соответствующий
-stream <a href="/investAPI/head-orders/">сервиса работы с торговыми поручениями</a>. </p>
+
+<p>Мы не рекомендуем использовать метод получения операций для идентификации изменений
+статусов торговых поручений — некоторые операции могут приходить с задержкой относительно реального
+исполнения. Для получения статусов исполнения торговых поручений рекомендуем использовать
+стрим <a href="/investAPI/head-orders/#_7">сервиса работы с торговыми поручениями</a>. </p>
 <h2 id="_3">На что нужно обратить внимание в методах получения списка операций</h2>
 <ol>
 <li>id операций могут меняться со временем. Не стоит ориентироваться на id операций, как на первичный ключ. Если у вас есть потребность перезагрузить историю операций, при повторном запросе операции, рекомендуем старые id операции удалить.</li>
