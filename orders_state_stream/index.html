@@ -1679,15 +1679,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Резюме
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1703,7 +1694,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Сообщения стрима
     </span>
@@ -1713,7 +1704,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Статусы
     </span>
@@ -1722,7 +1713,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Состав сообщений
     </span>
@@ -2432,15 +2423,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Резюме
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2456,7 +2438,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Сообщения стрима
     </span>
@@ -2466,7 +2448,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Статусы
     </span>
@@ -2475,7 +2457,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Состав сообщений
     </span>
@@ -2553,38 +2535,13 @@
 </blockquote>
 <h3 id="uid">Ключ идемпотентности в формате UID</h3>
 <p><code>order_request_id</code> в сообщениях стрима передаётся только формате UID. Если в запросе <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a> передать значение в другом формате, оно будет подменено в сообщениях стрима на сгенерированный API UID. Однозначно связать выставленное поручение не получится.</p>
-<h3 id="_3">Резюме</h3>
-<p>В таблице привели возможные ответы стрима в зависимости от параметов, переданных в <code>PostOrderRequest</code>:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Ключ идемпотентности </br> не передан</th>
-<th>Ключ идемпотентности </br> передан не в UID</th>
-<th>Ключ идемпотентности </br> передан в UID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Тип исполнения не передан</strong>  </br> <strong>или не соответствует типу заявки</strong></td>
-<td><code>order_request_id</code> </br> отсутствует в сообщениях</td>
-<td><code>order_request_id</code> </br> отсутствует в сообщениях</td>
-<td><code>order_request_id</code> </br> отсутствует в сообщениях</td>
-</tr>
-<tr>
-<td><strong>Тип исполнения передан</strong> </br> <strong>и соответствует типу заявки</strong></td>
-<td>в сообщениях <code>order_request_id</code> </br> сгенерированный API</td>
-<td>в сообщениях <code>order_request_id</code> </br> сгенерированный API</td>
-<td><strong>в сообщениях order_request_id </br> из PostOrder</strong></td>
-</tr>
-</tbody>
-</table>
+<p>В таблице привели возможные ответы стрима в зависимости от параметов, переданных в <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a>:</p>
 <table>
 <thead>
 <tr>
 <th>Ключ идемпотентности</th>
 <th>Тип исполнения</th>
-<th>order_request_id</th>
+<th>Ответы стрима</th>
 </tr>
 </thead>
 <tbody>
@@ -2596,7 +2553,7 @@
 <tr>
 <td>Не передан</br> Передан не в UID</td>
 <td>Передан и соответствует типу заявки</td>
-<td>В сообщениях <code>order_request_id</code> сгенерированный API</td>
+<td>В сообщениях <code>order_request_id</code>,сгенерированный API</td>
 </tr>
 <tr>
 <td>Передан в UID</td>
@@ -2606,12 +2563,12 @@
 </tbody>
 </table>
 <h2 id="replaceorder">ReplaceOrder</h2>
-<p>Методом <a href="/investAPI/orders/#replaceorderrequest">изменения выставленной заявки</a> пока не поддерживается новая маршрутизация. Будет доработано в ближайшее время.</p>
-<h2 id="_4">Сообщения стрима</h2>
-<h3 id="_5">Статусы</h3>
-<p>Первое сообщение по поручению в стриме соответствует получению заявки брокером. На этом этапе еще не определен биржевой номер заявки, в <code>order_id</code> передается внутренний номер.</p>
-<h3 id="_6">Состав сообщений</h3>
-<p>Некоторые параметры ответа, такие, как список сделок и маркер, опциональные и ориентированы на будущее развитие метода.</p>
+<p>В методе <a href="/investAPI/orders/#replaceorderrequest">изменения выставленной заявки</a> пока не поддерживается новая маршрутизация. Мы доработаем это в ближайшее время.</p>
+<h2 id="_3">Сообщения стрима</h2>
+<h3 id="_4">Статусы</h3>
+<p>Первое сообщение по поручению в стриме соответствует получению заявки брокером. На этом этапе ещё не определён биржевой номер заявки, в <code>order_id</code> передаётся внутренний номер.</p>
+<h3 id="_5">Состав сообщений</h3>
+<p>Некоторые параметры ответа, например, список сделок и маркер, опциональные и ориентированы на будущее развитие метода.</p>
 
 
 
