@@ -2505,7 +2505,7 @@
 <li><a href="/investAPI/faq_orders/#order_id-postorder_1">ключ идемпотентности</a> должен быть передан в формате UID.</li>
 </ul>
 <h3 id="timeinforcetype">TimeInForceType</h3>
-<p>Для идентификации заявки в стриме по ключу идемпотентности нужно явно указать алгоритм исполнения поручения в <code>PostOrderRequest</code>.</p>
+<p>Чтобы идентифицировать заявку в стриме по ключу идемпотентности, нужно явно указать алгоритм исполнения поручения в <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a>.</p>
 <p>Подходящие под условия варианты исполнения в зависимости от <a href="/investAPI/orders/#ordertype">типа заявки</a>:</p>
 <table>
 <thead>
@@ -2534,7 +2534,7 @@
 Если не передавать подходящий <code>TimeInForceType</code>, в сообщениях стрима не будет заполнен <code>order_request_id</code>. Однозначно связать выставленное поручение не получится.</p>
 </blockquote>
 <h3 id="uid">Ключ идемпотентности в формате UID</h3>
-<p><code>order_request_id</code> в сообщениях стрима передаётся только формате UID. Если в запросе <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a> передать значение в другом формате, оно будет подменено в сообщениях стрима на сгенерированный API UID. Однозначно связать выставленное поручение не получится.</p>
+<p><code>order_request_id</code> в сообщениях стрима передаётся только формате UID. Если в <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a> передать значение в другом формате, оно будет подменено в сообщениях стрима на сгенерированный API UID. Однозначно связать выставленное поручение не получится.</p>
 <p>В таблице привели возможные ответы стрима в зависимости от параметов, переданных в <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a>:</p>
 <table>
 <thead>
