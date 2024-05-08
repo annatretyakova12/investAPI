@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../orders_state_stream/">
+        <link rel="prev" href="../table_order_currency/">
       
       
         <link rel="next" href="../operations/">
@@ -818,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../weekend/" class="md-nav__link">
+      <a href="../weekend.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -839,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../held_instruments/" class="md-nav__link">
+      <a href="../held_instruments.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tinkoff_fund/" class="md-nav__link">
+      <a href="../tinkoff_fund.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1599,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../orders_state_stream/" class="md-nav__link">
+      <a href="../orders_state_stream.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1713,7 +1713,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Получение списка операций по счёту
+      Получить список операций по счёту
     </span>
   </a>
   
@@ -2398,7 +2398,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Получение списка операций по счёту
+      Получить список операций по счёту
     </span>
   </a>
   
@@ -2501,20 +2501,30 @@
 
 
 <h1 id="_1">Сервис получения информации о портфеле по конкретному счёту</h1>
-<h2 id="_2">Получение списка операций по счёту</h2>
-<p>В процессе работы торговому роботу требуется получать информацию об операциях по счёту. Например, чтобы
-корректно рассчитывать доходности и собирать статистику своей работы. Для реализации данных потребностей
-можно использовать метод <a href="/investAPI/operations#getoperations">getOperations</a>, а также более новый метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.</p>
-<p>При работе с данными методами необходимо учитывать <a href="/investAPI/operations_problems">особенности взаимодействия</a>.</p>
-<p>Метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> является более предпочтительным для использования, возвращает список всех операций по указанному счету.
+<h2 id="_2">Получить список операций по счёту</h2>
+<p>В процессе работы торговому роботу нужно получать информацию об операциях по счёту — например, чтобы
+корректно рассчитывать доходности и собирать статистику своей работы. </p>
+<p>Для этого можно использовать два метода:</p>
+<ul>
+<li><a href="/investAPI/operations#getoperations">getOperations</a> .</li>
+<li><a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> — является более предпочтительным.Возвращает список всех операций по указанному счёту.</li>
+</ul>
+<p>Метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> является более предпочтительным для использования и возвращает список всех операций по указанному счету.
 Данный метод возвращает информацию обо всех операциях, в том числе отмененных, поддерживает пагинацию и расширенную фильтрацию.
 Плюс данный метод обладает всеми преимуществами метода <a href="/investAPI/operations#getoperations">getOperations</a>.</p>
-<p><strong>Важно!!!</strong> Метод <a href="/investAPI/operations#getoperations">getOperations</a> не поддерживает опционы. Для получения информации по операциям с опционами
+<p>При работе с методами учитывайте <a href="/investAPI/operations_problems">особенности взаимодействия</a>.</p>
+<blockquote>
+<p><strong>Важно</strong><br>
+Метод <a href="/investAPI/operations#getoperations">getOperations</a> не поддерживает опционы. Для получения информации по операциям с опционами
 мы рекомендуем использовать метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.</p>
+</blockquote>
 <p>Для вызова данных методов во входных параметрах достаточно указать только <strong><code>account_id</code></strong>.</p>
 <p>Метод <a href="/investAPI/operations#getoperations">getOperations</a>, в том числе, возвращает отменённые операции (параметр <em>state</em>), это нужно обязательно учитывать
 в алгоритме работы. </p>
-<p><strong>Важно!!!</strong> Метод <a href="/investAPI/operations#getoperations">getOperations</a> возвращает только последнюю тысячу операций.</p>
+<blockquote>
+<p><strong>Важно</strong><br>
+Метод <a href="/investAPI/operations#getoperations">getOperations</a> возвращает только последнюю тысячу операций.</p>
+</blockquote>
 <p>Команда TINKOFF INVEST API не рекомендует использовать метод получения операций для идентификации изменения
 статусов торговых поручений, т.к. некоторые операции могут происходить с задержкой относительно реального
 исполнения. Для получения статусов исполнения торговых поручений рекомендуется использовать соответствующий
@@ -2533,7 +2543,10 @@ stream <a href="/investAPI/head-orders/">сервиса работы с торг
 <p>Обратите внимание, что для расчёта суммарной стоимости активов используются текущие цены биржевых
 инструментов. Если торги в данный момент не ведутся, то берётся цена закрытия последней торговой 
 сессии. </p>
-<p><strong>Важно!!!</strong> в данный момент запрос портфолио по счету инвесткопилки ( "type": "ACCOUNT_TYPE_INVEST_BOX") не доступен. </p>
+<blockquote>
+<p><strong>Важно</strong><br>
+в данный момент запрос портфолио по счету инвесткопилки ( "type": "ACCOUNT_TYPE_INVEST_BOX") не доступен. </p>
+</blockquote>
 <p>В данный метод добавлен булев параметр <code>blocked</code>, принимающий значение <em>true</em>, если инструмент заблокирован депозитарием.</p>
 <p><strong>Значения средних цен покупки инструментов (параметры <em>average_position_price</em>, <em>average_position_price_pt</em> и 
 <em>average_position_price_fifo</em>) рассчитываются асинхронно. Возможна задержка в пересчёте до одной секунды.</strong></p>
@@ -2549,8 +2562,11 @@ INVEST API рекомендует использовать именно этот
 <p>В данном методе также возвращается тип инструмента для списка ценно-бумажных позиций портфеля в параметре <code>instrument_type</code>.</p>
 <p>В данный метод добавлен булев параметр <code>exchange_blocked</code>, принимающий значение <em>true,</em> если инструмент заблокирован депозитарием.</p>
 <p>В метод <a href="/investAPI/operations#getpositions">getPositions</a> добавлен массив опционов в портфеле.</p>
-<p><strong>Важно!!!</strong>. Данный метод не возвращает объём средств, заблокированных под гарантийное обеспечение фьючерсов. Для 
+<blockquote>
+<p><strong>Важно</strong><br>
+Данный метод не возвращает объём средств, заблокированных под гарантийное обеспечение фьючерсов. Для 
 получения этой информации воспользуйтесь методом <a href="/investAPI/operations#getwithdrawlimits">getWithdrawLimits</a>. </p>
+</blockquote>
 <h2 id="_6">Получение доступного остатка для вывода денежных средств</h2>
 <p>Метод <a href="/investAPI/operations#getwithdrawlimits">getWithdrawLimits</a> позволяет в 
 удобном виде получить доступный для вывода баланс денежных средств, а также количество заблокированных 

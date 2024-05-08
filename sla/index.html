@@ -820,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../weekend/" class="md-nav__link">
+      <a href="../weekend.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../held_instruments/" class="md-nav__link">
+      <a href="../held_instruments.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tinkoff_fund/" class="md-nav__link">
+      <a href="../tinkoff_fund.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -998,16 +998,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Сколько действует ключ идемпотентности
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      Время работы стрим-соединения
+      Время жизни ключа идемпотентности на стороне брокера
     </span>
   </a>
   
@@ -1653,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../orders_state_stream/" class="md-nav__link">
+      <a href="../orders_state_stream.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2321,16 +2312,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Сколько действует ключ идемпотентности
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      Время работы стрим-соединения
+      Время жизни ключа идемпотентности на стороне брокера
     </span>
   </a>
   
@@ -2356,14 +2338,10 @@
 
   <h1>Время жизни и хранение информации</h1>
 
-<h3 id="_1">Сколько действует ключ идемпотентности</h3>
-<p>Ключ идемпотентности передаётся как параметры <code>order_id</code> в методе <a href="/investAPI/orders#postorder">postOrder</a> и <code>idempotency_key</code> в методе <a href="/investAPI/orders#replaceorder">replaceOrder</a>.</p>
-<p>Он хранится на стороне брокера, уникальность значений отслеживается <strong>только за последний месяц</strong>.</p>
-<h3 id="-">Время работы стрим-соединения</h3>
-<p>Стрим-соединения не ограничиваются по сроку жизни, однако они периодически могут закрываться по инициативе API, 
-это может быть вызвано техническими работами, обновлениями и другими регламентными мероприятиями.
-Рекомендуется реализовывать обработку ошибок, связанных с закрытием соединений, и, в случае закрытия стрим-соединения, 
-поднимать новое соединение.</p>
+<h2 id="_1">Время жизни ключа идемпотентности на стороне брокера</h2>
+<p><strong>Ключ идемпотентности</strong>, передаваемый как параметр <code>order_id</code> в методе <a href="/investAPI/orders#postorder">postOrder</a>, а так же
+передаваемый как <code>idempotency_key</code> в методе <a href="/investAPI/orders#replaceorder">replaceOrder</a> хранится на стороне брокера и имеет срок жизни <strong>один год</strong>.</p>
+<p>Счетчик стрим соединений обновляется каждые 2 минуты.</p>
 
 
 

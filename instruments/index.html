@@ -818,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../weekend/" class="md-nav__link">
+      <a href="../weekend.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -839,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../held_instruments/" class="md-nav__link">
+      <a href="../held_instruments.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tinkoff_fund/" class="md-nav__link">
+      <a href="../tinkoff_fund.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2736,24 +2736,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bondtype" class="md-nav__link">
-    <span class="md-ellipsis">
-      BondType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instrumentexchangetype" class="md-nav__link">
-    <span class="md-ellipsis">
-      InstrumentExchangeType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getbondeventsrequesteventtype" class="md-nav__link">
     <span class="md-ellipsis">
       GetBondEventsRequest.EventType
@@ -3035,7 +3017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../orders_state_stream/" class="md-nav__link">
+      <a href="../orders_state_stream.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4984,24 +4966,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bondtype" class="md-nav__link">
-    <span class="md-ellipsis">
-      BondType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instrumentexchangetype" class="md-nav__link">
-    <span class="md-ellipsis">
-      InstrumentExchangeType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getbondeventsrequesteventtype" class="md-nav__link">
     <span class="md-ellipsis">
       GetBondEventsRequest.EventType
@@ -5119,12 +5083,12 @@
   <h1>Методы</h1>
 
 <h2 id="instrumentsservice">InstrumentsService</h2>
-<p>Методы сервиса предназначены для получения:</br>1. Информации об инструментах.</br>2.
-Расписания торговых сессий.</br>3. Календаря выплат купонов по облигациям.</br>4.
-Размера гарантийного обеспечения по фьючерсам.</br>5. Дивидендов по ценной бумаге.</p>
+<p>Сервис предназначен для получения:</br><strong>1</strong>. информации об инструментах;</br><strong>2</strong>.
+расписания торговых сессий;</br><strong>3</strong>. календаря выплат купонов по облигациям;</br><strong>4</strong>.
+размера гарантийного обеспечения по фьючерсам;</br><strong>5</strong>. дивидендов по ценной бумаге.</p>
 <h3 id="_1">Методы сервиса</h3>
 <h4 id="tradingschedules">TradingSchedules</h4>
-<p>Получить расписания торгов торговых площадок.</p>
+<p>Метод получения расписания торгов торговых площадок.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#tradingschedulesrequest">TradingSchedulesRequest</a></p>
@@ -5134,7 +5098,7 @@
 </li>
 </ul>
 <h4 id="bondby">BondBy</h4>
-<p>Получить облигации по её идентификатору.</p>
+<p>Метод получения облигации по её идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5144,7 +5108,7 @@
 </li>
 </ul>
 <h4 id="bonds">Bonds</h4>
-<p>Получить список облигаций.</p>
+<p>Метод получения списка облигаций.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
@@ -5154,7 +5118,7 @@
 </li>
 </ul>
 <h4 id="getbondcoupons">GetBondCoupons</h4>
-<p>Получить график выплат купонов по облигации.</p>
+<p>Метод получения графика выплат купонов по облигации.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getbondcouponsrequest">GetBondCouponsRequest</a></p>
@@ -5164,7 +5128,7 @@
 </li>
 </ul>
 <h4 id="getbondevents">GetBondEvents</h4>
-<p>Получить события по облигации</p>
+<p>Метод получения событий по облигации</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getbondeventsrequest">GetBondEventsRequest</a></p>
@@ -5174,7 +5138,7 @@
 </li>
 </ul>
 <h4 id="currencyby">CurrencyBy</h4>
-<p>Получить валюту по её идентификатору.</p>
+<p>Метод получения валюты по её идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5184,7 +5148,7 @@
 </li>
 </ul>
 <h4 id="currencies">Currencies</h4>
-<p>Получить список валют.</p>
+<p>Метод получения списка валют.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
@@ -5194,7 +5158,7 @@
 </li>
 </ul>
 <h4 id="etfby">EtfBy</h4>
-<p>Получить инвестиционный фонд по его идентификатору.</p>
+<p>Метод получения инвестиционного фонда по его идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5204,7 +5168,7 @@
 </li>
 </ul>
 <h4 id="etfs">Etfs</h4>
-<p>Получить список инвестиционных фондов.</p>
+<p>Метод получения списка инвестиционных фондов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
@@ -5214,7 +5178,7 @@
 </li>
 </ul>
 <h4 id="futureby">FutureBy</h4>
-<p>Получить фьючерс по его идентификатору.</p>
+<p>Метод получения фьючерса по его идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5224,7 +5188,7 @@
 </li>
 </ul>
 <h4 id="futures">Futures</h4>
-<p>Получить список фьючерсов.</p>
+<p>Метод получения списка фьючерсов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
@@ -5234,7 +5198,7 @@
 </li>
 </ul>
 <h4 id="optionby">OptionBy</h4>
-<p>Получить опцион по его идентификатору.</p>
+<p>Метод получения опциона по его идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5244,7 +5208,7 @@
 </li>
 </ul>
 <h4 id="options">Options</h4>
-<p>Deprecated Получить списка опционов.</p>
+<p>Deprecated Метод получения списка опционов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
@@ -5254,7 +5218,7 @@
 </li>
 </ul>
 <h4 id="optionsby">OptionsBy</h4>
-<p>Получить список опционов.</p>
+<p>Метод получения списка опционов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#filteroptionsrequest">FilterOptionsRequest</a></p>
@@ -5264,7 +5228,7 @@
 </li>
 </ul>
 <h4 id="shareby">ShareBy</h4>
-<p>Получить акцию по её идентификатору.</p>
+<p>Метод получения акции по её идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5274,7 +5238,7 @@
 </li>
 </ul>
 <h4 id="shares">Shares</h4>
-<p>Получить список акций.</p>
+<p>Метод получения списка акций.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentsrequest">InstrumentsRequest</a></p>
@@ -5284,7 +5248,7 @@
 </li>
 </ul>
 <h4 id="indicatives">Indicatives</h4>
-<p>Получить индикативные инструменты — индексы, товары и другие.</p>
+<p>Метод получения индикативных инструментов (индексов, товаров и др.)</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#indicativesrequest">IndicativesRequest</a></p>
@@ -5294,7 +5258,7 @@
 </li>
 </ul>
 <h4 id="getaccruedinterests">GetAccruedInterests</h4>
-<p>Получить накопленный купонный доход по облигации.</p>
+<p>Метод получения накопленного купонного дохода по облигации.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getaccruedinterestsrequest">GetAccruedInterestsRequest</a></p>
@@ -5304,7 +5268,7 @@
 </li>
 </ul>
 <h4 id="getfuturesmargin">GetFuturesMargin</h4>
-<p>Получить размера гарантийного обеспечения по фьючерсам.</p>
+<p>Метод получения размера гарантийного обеспечения по фьючерсам.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getfuturesmarginrequest">GetFuturesMarginRequest</a></p>
@@ -5314,7 +5278,7 @@
 </li>
 </ul>
 <h4 id="getinstrumentby">GetInstrumentBy</h4>
-<p>Получить основную информацию об инструменте.</p>
+<p>Метод получения основной информации об инструменте.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#instrumentrequest">InstrumentRequest</a></p>
@@ -5324,7 +5288,7 @@
 </li>
 </ul>
 <h4 id="getdividends">GetDividends</h4>
-<p>Получить события выплаты дивидендов по инструменту.</p>
+<p>Метод для получения событий выплаты дивидендов по инструменту.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getdividendsrequest">GetDividendsRequest</a></p>
@@ -5334,7 +5298,7 @@
 </li>
 </ul>
 <h4 id="getassetby">GetAssetBy</h4>
-<p>Получить актив по его идентификатору.</p>
+<p>Метод получения актива по его идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#assetrequest">AssetRequest</a></p>
@@ -5344,7 +5308,7 @@
 </li>
 </ul>
 <h4 id="getassets">GetAssets</h4>
-<p>Получить список активов. Метод работает для всех инструментов, кроме срочных — опционов и фьючерсов.</p>
+<p>Метод получения списка активов. Метод работает для всех инструментов, за исключением срочных - опционов и фьючерсов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#assetsrequest">AssetsRequest</a></p>
@@ -5354,7 +5318,7 @@
 </li>
 </ul>
 <h4 id="getfavorites">GetFavorites</h4>
-<p>Получить список избранных инструментов.</p>
+<p>Метод получения списка избранных инструментов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getfavoritesrequest">GetFavoritesRequest</a></p>
@@ -5364,7 +5328,7 @@
 </li>
 </ul>
 <h4 id="editfavorites">EditFavorites</h4>
-<p>Отредактировать список избранных инструментов.</p>
+<p>Метод редактирования списка избранных инструментов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#editfavoritesrequest">EditFavoritesRequest</a></p>
@@ -5374,7 +5338,7 @@
 </li>
 </ul>
 <h4 id="getcountries">GetCountries</h4>
-<p>Получить список стран.</p>
+<p>Метод получения списка стран.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getcountriesrequest">GetCountriesRequest</a></p>
@@ -5384,7 +5348,7 @@
 </li>
 </ul>
 <h4 id="findinstrument">FindInstrument</h4>
-<p>Найти инструмент.</p>
+<p>Метод поиска инструмента.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#findinstrumentrequest">FindInstrumentRequest</a></p>
@@ -5394,7 +5358,7 @@
 </li>
 </ul>
 <h4 id="getbrands">GetBrands</h4>
-<p>Получить список брендов.</p>
+<p>Метод получения списка брендов.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getbrandsrequest">GetBrandsRequest</a></p>
@@ -5404,7 +5368,7 @@
 </li>
 </ul>
 <h4 id="getbrandby">GetBrandBy</h4>
-<p>Получить бренд по его идентификатору.</p>
+<p>Метод получения бренда по его идентификатору.</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getbrandrequest">GetBrandRequest</a></p>
@@ -5414,7 +5378,7 @@
 </li>
 </ul>
 <h4 id="getassetfundamentals">GetAssetFundamentals</h4>
-<p>Получить фундаментальные показатели по активу.</p>
+<p>Метод получения фундаментальных показателей по активу</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getassetfundamentalsrequest">GetAssetFundamentalsRequest</a></p>
@@ -5424,7 +5388,7 @@
 </li>
 </ul>
 <h4 id="getassetreports">GetAssetReports</h4>
-<p>Получить расписания выхода отчётностей эмитентов.</p>
+<p>Метод получения расписания выхода отчетностей эмитентов</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getassetreportsrequest">GetAssetReportsRequest</a></p>
@@ -5434,7 +5398,7 @@
 </li>
 </ul>
 <h4 id="getconsensusforecasts">GetConsensusForecasts</h4>
-<p>Получить мнения аналитиков по инструменту.</p>
+<p>Метод получения мнения аналитиков по инструменту</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getconsensusforecastsrequest">GetConsensusForecastsRequest</a></p>
@@ -5444,7 +5408,7 @@
 </li>
 </ul>
 <h4 id="getforecastby">GetForecastBy</h4>
-<p>Получить прогнозов инвестдомов по инструменту.</p>
+<p>Метод получения прогнозов инвестдомов по инструменту</p>
 <ul>
 <li>
 <p>Тело запроса — <a href="#getforecastrequest">GetForecastRequest</a></p>
@@ -5476,12 +5440,12 @@
 <tr>
 <td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало периода по UTC.</td>
+<td>Начало периода по часовому поясу UTC.</td>
 </tr>
 <tr>
 <td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание периода по UTC.</td>
+<td>Окончание периода по часовому поясу UTC.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -5571,72 +5535,72 @@
 <tr>
 <td>start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала торгов по UTC.</td>
+<td>Время начала торгов по часовому поясу UTC.</td>
 </tr>
 <tr>
 <td>end_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания торгов по UTC.</td>
+<td>Время окончания торгов по часовому поясу UTC.</td>
 </tr>
 <tr>
 <td>opening_auction_start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала аукциона открытия по UTC.</td>
+<td>Время начала аукциона открытия в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>closing_auction_end_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания аукциона закрытия по UTC.</td>
+<td>Время окончания аукциона закрытия в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>evening_opening_auction_start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала аукциона открытия вечерней сессии по UTC.</td>
+<td>Время начала аукциона открытия вечерней сессии в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>evening_start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала вечерней сессии по UTC.</td>
+<td>Время начала вечерней сессии в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>evening_end_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания вечерней сессии по UTC.</td>
+<td>Время окончания вечерней сессии в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>clearing_start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала основного клиринга по UTC.</td>
+<td>Время начала основного клиринга в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>clearing_end_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания основного клиринга по UTC.</td>
+<td>Время окончания основного клиринга в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>premarket_start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала премаркета по UTC.</td>
+<td>Время начала премаркета в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>premarket_end_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания премаркета по UTC.</td>
+<td>Время окончания премаркета в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>closing_auction_start_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала аукциона закрытия по UTC.</td>
+<td>Время начала аукциона закрытия в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>opening_auction_end_time</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания аукциона открытия по UTC.</td>
+<td>Время окончания аукциона открытия в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>intervals</td>
 <td>Массив объектов <a href="#tradinginterval">TradingInterval</a></td>
-<td>Торговые интервалы.</td>
+<td>Торговые интервалы</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -5661,12 +5625,12 @@
 <tr>
 <td>id_type</td>
 <td><a href="#instrumentidtype">InstrumentIdType</a></td>
-<td>Тип идентификатора инструмента. Возможные значения — <code>figi</code>, <code>ticker</code>. <a href="https://russianinvestments.github.io/investAPI/faq_identification/">Подробнее об идентификации инструментов</a>.</td>
+<td>Тип идентификатора инструмента. Возможные значения: figi, ticker. Подробнее об идентификации инструментов: <a href="https://russianinvestments.github.io/investAPI/faq_identification/">Идентификация инструментов</a></td>
 </tr>
 <tr>
 <td>class_code</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор <code>class_code</code>. Обязательный, если <code>id_type = ticker</code>.</td>
+<td>Идентификатор class_code. Обязателен при id_type = ticker.</td>
 </tr>
 <tr>
 <td>id</td>
@@ -5696,12 +5660,7 @@
 <tr>
 <td>instrument_status</td>
 <td><a href="#instrumentstatus">InstrumentStatus</a></td>
-<td>Статус запрашиваемых инструментов. <a href="#instrumentstatus">Возможные значения</a>.</td>
-</tr>
-<tr>
-<td>instrument_exchange</td>
-<td><a href="#instrumentexchangetype">InstrumentExchangeType</a></td>
-<td>Тип площадки торговли. <a href="#instrumentexchangetype">Возможные значения</a>.</td>
+<td>Статус запрашиваемых инструментов. Возможные значения: <a href="#instrumentstatus">InstrumentStatus</a></td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -5713,7 +5672,7 @@
 <!-- end HasFields -->
 
 <h4 id="filteroptionsrequest">FilterOptionsRequest</h4>
-<p>Параметры фильтрации опционов.</p>
+<p>Параметры фильтрации опционов</p>
 <table>
 <thead>
 <tr>
@@ -5731,7 +5690,7 @@
 <tr>
 <td>basic_asset_position_uid</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор позиции базового актива опциона.</td>
+<td>Идентификатор позиции базового актива опциона</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -5806,22 +5765,22 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало запрашиваемого периода по UTC. Фильтрация по <code>coupon_date</code> — дата выплаты купона.</td>
+<td>Начало запрашиваемого периода в часовом поясе UTC. Фильтрация по coupon_date (дата выплаты купона)</td>
 </tr>
 <tr>
 <td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание запрашиваемого периода по UTC. Фильтрация по <code>coupon_date</code> — дата выплаты купона.</td>
+<td>Окончание запрашиваемого периода в часовом поясе UTC. Фильтрация по coupon_date (дата выплаты купона)</td>
 </tr>
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента — <code>figi</code> или <code>instrument_uid</code>.</td>
+<td>Идентификатор инструмента Figi или instrument_uid</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -5871,17 +5830,17 @@
 <tr>
 <td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало запрашиваемого периода по UTC.</td>
+<td>Начало запрашиваемого периода в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание запрашиваемого периода по UTC.</td>
+<td>Окончание запрашиваемого периода в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента — <code>figi</code> или <code>instrument_uid</code>.</td>
+<td>Идентификатор инструмента Figi или instrument_uid</td>
 </tr>
 <tr>
 <td>type</td>
@@ -5935,107 +5894,107 @@
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента.</td>
+<td>Идентификатор инструмента</td>
 </tr>
 <tr>
 <td>event_number</td>
 <td><a href="#int32">int32</a></td>
-<td>Номер события для данного типа события.</td>
+<td>Номер события для данного типа события</td>
 </tr>
 <tr>
 <td>event_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата события.</td>
+<td>Дата события</td>
 </tr>
 <tr>
 <td>event_type</td>
 <td><a href="#getbondeventsrequesteventtype">GetBondEventsRequest.EventType</a></td>
-<td>Тип события.</td>
+<td>Тип события</td>
 </tr>
 <tr>
 <td>event_total_vol</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Полное количество бумаг, задействованных в событии.</td>
+<td>Полное количество бумаг, задействованных в событии</td>
 </tr>
 <tr>
 <td>fix_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата фиксации владельцев для участия в событии.</td>
+<td>Дата фиксации владельцев для участия в событии</td>
 </tr>
 <tr>
 <td>rate_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата определения даты или факта события.</td>
+<td>Дата определения даты либо факта события</td>
 </tr>
 <tr>
 <td>default_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата дефолта, если применимо.</td>
+<td>Дата дефолта (если применимо)</td>
 </tr>
 <tr>
 <td>real_pay_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата реального исполнения обязательства.</td>
+<td>Дата реального исполнения обязательства</td>
 </tr>
 <tr>
 <td>pay_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата выплаты.</td>
+<td>Дата выплаты</td>
 </tr>
 <tr>
 <td>pay_one_bond</td>
 <td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Выплата на одну облигацию.</td>
+<td>Выплата на одну облигацию</td>
 </tr>
 <tr>
 <td>money_flow_val</td>
 <td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Выплаты на все бумаги, задействованные в событии.</td>
+<td>Выплаты на все бумаги, задействованные в событии</td>
 </tr>
 <tr>
 <td>execution</td>
 <td><a href="#string">string</a></td>
-<td>Признак исполнения.</td>
+<td>Признак исполнения</td>
 </tr>
 <tr>
 <td>operation_type</td>
 <td><a href="#string">string</a></td>
-<td>Тип операции.</td>
+<td>Тип операции</td>
 </tr>
 <tr>
 <td>value</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Стоимость операции — ставка купона, доля номинала, цена выкупа или коэффициент конвертации.</td>
+<td>Стоимость операции (ставка купона, доля номинала, цена выкупа или коэффициент конвертации)</td>
 </tr>
 <tr>
 <td>note</td>
 <td><a href="#string">string</a></td>
-<td>Примечание.</td>
+<td>Примечание</td>
 </tr>
 <tr>
 <td>convert_to_fin_tool_id</td>
 <td><a href="#string">string</a></td>
-<td>ID выпуска бумаг, в который произведена конвертация (для конвертаций).</td>
+<td>ID выпуска бумаг, в который произведена конвертация (для конвертаций)</td>
 </tr>
 <tr>
 <td>coupon_start_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало купонного периода.</td>
+<td>Начало купонного периода</td>
 </tr>
 <tr>
 <td>coupon_end_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание купонного периода.</td>
+<td>Окончание купонного периода</td>
 </tr>
 <tr>
 <td>coupon_period</td>
 <td><a href="#int32">int32</a></td>
-<td>Купонный период.</td>
+<td>Купонный период</td>
 </tr>
 <tr>
 <td>coupon_interest_rate</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка купона, процентов годовых.</td>
+<td>Ставка купона, процентов годовых</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -6060,7 +6019,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>coupon_date</td>
@@ -6075,7 +6034,7 @@
 <tr>
 <td>fix_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата фиксации реестра для выплаты купона — опционально.</td>
+<td>(Опционально) Дата фиксации реестра для выплаты купона.</td>
 </tr>
 <tr>
 <td>pay_one_bond</td>
@@ -6355,7 +6314,7 @@
 <tr>
 <td>real_exchange</td>
 <td><a href="#realexchange">RealExchange</a></td>
-<td>Реальная площадка исполнения расчётов (биржа). Допустимые значения — <code>REAL_EXCHANGE_MOEX</code>, <code>REAL_EXCHANGE_RTS</code>.</td>
+<td>Реальная площадка исполнения расчётов (биржа). Допустимые значения: [REAL_EXCHANGE_MOEX, REAL_EXCHANGE_RTS]</td>
 </tr>
 <tr>
 <td>direction</td>
@@ -6365,7 +6324,7 @@
 <tr>
 <td>payment_type</td>
 <td><a href="#optionpaymenttype">OptionPaymentType</a></td>
-<td>Тип расчётов по опциону.</td>
+<td>Тип расчетов по опциону.</td>
 </tr>
 <tr>
 <td>style</td>
@@ -6440,32 +6399,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт.  Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт.  Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>min_price_increment</td>
@@ -6510,7 +6469,7 @@
 <tr>
 <td>for_iis_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Возможность покупки или продажи на ИИС.</td>
+<td>Возможность покупки/продажи на ИИС.</td>
 </tr>
 <tr>
 <td>otc_flag</td>
@@ -6530,12 +6489,12 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным.</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
@@ -6545,7 +6504,7 @@
 <tr>
 <td>api_trade_available_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Возможность торговать инструментом через API.</td>
+<td>Параметр указывает на возможность торговать инструментом через API.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -6620,7 +6579,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -6635,12 +6594,12 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN-идентификатор инструмента.</td>
+<td>Isin-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>lot</td>
 <td><a href="#int32">int32</a></td>
-<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <code>lot</code>. <a href="https://russianinvestments.github.io/investAPI/glossary#lot">Подробнее</a>.</td>
+<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <em>lot</em>. Подробнее: <a href="https://russianinvestments.github.io/investAPI/glossary#lot">лот</a></td>
 </tr>
 <tr>
 <td>currency</td>
@@ -6650,32 +6609,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>short_enabled_flag</td>
@@ -6700,7 +6659,7 @@
 <tr>
 <td>maturity_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата погашения облигации по UTC.</td>
+<td>Дата погашения облигации в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>nominal</td>
@@ -6715,12 +6674,12 @@
 <tr>
 <td>state_reg_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата выпуска облигации по UTC.</td>
+<td>Дата выпуска облигации в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>placement_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата размещения по UTC.</td>
+<td>Дата размещения в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>placement_price</td>
@@ -6735,12 +6694,12 @@
 <tr>
 <td>country_of_risk</td>
 <td><a href="#string">string</a></td>
-<td>Код страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>country_of_risk_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>sector</td>
@@ -6835,17 +6794,17 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг заблокированного ТКС.</td>
+<td>Флаг заблокированного ТКС</td>
 </tr>
 <tr>
 <td>subordinated_flag</td>
@@ -6855,7 +6814,7 @@
 <tr>
 <td>liquidity_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг достаточной ликвидности.</td>
+<td>Флаг достаточной ликвидности</td>
 </tr>
 <tr>
 <td>first_1min_candle_date</td>
@@ -6876,11 +6835,6 @@
 <td>brand</td>
 <td><a href="#branddata">BrandData</a></td>
 <td>Информация о бренде.</td>
-</tr>
-<tr>
-<td>bond_type</td>
-<td><a href="#bondtype">BondType</a></td>
-<td>Тип облигации.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -6905,7 +6859,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -6920,12 +6874,12 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN-идентификатор инструмента.</td>
+<td>Isin-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>lot</td>
 <td><a href="#int32">int32</a></td>
-<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <code>lot</code>. <a href="https://russianinvestments.github.io/investAPI/glossary#lot">Подробнее</a>.</td>
+<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <em>lot</em>. Подробнее: <a href="https://russianinvestments.github.io/investAPI/glossary#lot">лот</a></td>
 </tr>
 <tr>
 <td>currency</td>
@@ -6935,32 +6889,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг.Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>short_enabled_flag</td>
@@ -6975,7 +6929,7 @@
 <tr>
 <td>exchange</td>
 <td><a href="#string">string</a></td>
-<td>Tорговая площадка (секция биржи).</td>
+<td>Tорговая площадка (секция биржи)</td>
 </tr>
 <tr>
 <td>nominal</td>
@@ -6985,12 +6939,12 @@
 <tr>
 <td>country_of_risk</td>
 <td><a href="#string">string</a></td>
-<td>Код страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>country_of_risk_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>trading_status</td>
@@ -7050,12 +7004,12 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным.</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
@@ -7100,7 +7054,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -7115,12 +7069,12 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN-идентификатор инструмента.</td>
+<td>Isin-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>lot</td>
 <td><a href="#int32">int32</a></td>
-<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <code>lot</code>. <a href="https://russianinvestments.github.io/investAPI/glossary#lot">Подробнее</a>.</td>
+<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <em>lot</em>. Подробнее: <a href="https://russianinvestments.github.io/investAPI/glossary#lot">лот</a></td>
 </tr>
 <tr>
 <td>currency</td>
@@ -7130,32 +7084,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг.Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>short_enabled_flag</td>
@@ -7185,7 +7139,7 @@
 <tr>
 <td>released_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата выпуска по UTC.</td>
+<td>Дата выпуска в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>num_shares</td>
@@ -7195,12 +7149,12 @@
 <tr>
 <td>country_of_risk</td>
 <td><a href="#string">string</a></td>
-<td>Код страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>country_of_risk_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>sector</td>
@@ -7263,11 +7217,6 @@
 <td>Уникальный идентификатор актива.</td>
 </tr>
 <tr>
-<td>instrument_exchange</td>
-<td><a href="#instrumentexchangetype">InstrumentExchangeType</a></td>
-<td>Тип площадки торговли.</td>
-</tr>
-<tr>
 <td>for_iis_flag</td>
 <td><a href="#bool">bool</a></td>
 <td>Признак доступности для ИИС.</td>
@@ -7275,12 +7224,12 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>ФлагФлаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным.</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
@@ -7290,7 +7239,7 @@
 <tr>
 <td>liquidity_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг достаточной ликвидности.</td>
+<td>Флаг достаточной ликвидности</td>
 </tr>
 <tr>
 <td>first_1min_candle_date</td>
@@ -7330,7 +7279,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -7345,7 +7294,7 @@
 <tr>
 <td>lot</td>
 <td><a href="#int32">int32</a></td>
-<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <code>lot</code>. <a href="https://russianinvestments.github.io/investAPI/glossary#lot">Подробнее</a>.</td>
+<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <em>lot</em>. Подробнее: <a href="https://russianinvestments.github.io/investAPI/glossary#lot">лот</a></td>
 </tr>
 <tr>
 <td>currency</td>
@@ -7355,32 +7304,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг.Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт </a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>short_enabled_flag</td>
@@ -7400,12 +7349,12 @@
 <tr>
 <td>first_trade_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата начала обращения контракта по UTC.</td>
+<td>Дата начала обращения контракта в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>last_trade_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата по UTC, до которой возможно проведение операций с фьючерсом.</td>
+<td>Дата в часовом поясе UTC, до которой возможно проведение операций с фьючерсом.</td>
 </tr>
 <tr>
 <td>futures_type</td>
@@ -7430,12 +7379,12 @@
 <tr>
 <td>country_of_risk</td>
 <td><a href="#string">string</a></td>
-<td>Код страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>country_of_risk_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>sector</td>
@@ -7505,12 +7454,12 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным.</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
@@ -7570,7 +7519,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -7585,12 +7534,12 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN-идентификатор инструмента.</td>
+<td>Isin-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>lot</td>
 <td><a href="#int32">int32</a></td>
-<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <code>lot</code>. <a href="https://russianinvestments.github.io/investAPI/glossary#lot">Подробнее</a></td>
+<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <em>lot</em>. Подробнее: <a href="https://russianinvestments.github.io/investAPI/glossary#lot">лот</a></td>
 </tr>
 <tr>
 <td>currency</td>
@@ -7600,32 +7549,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг.Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>short_enabled_flag</td>
@@ -7645,7 +7594,7 @@
 <tr>
 <td>ipo_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата IPO акции по UTC.</td>
+<td>Дата IPO акции в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>issue_size</td>
@@ -7655,12 +7604,12 @@
 <tr>
 <td>country_of_risk</td>
 <td><a href="#string">string</a></td>
-<td>Код страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>country_of_risk_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>sector</td>
@@ -7705,7 +7654,7 @@
 <tr>
 <td>share_type</td>
 <td><a href="#sharetype">ShareType</a></td>
-<td>Тип акции. Возможные значения — <code>[ShareType](https://russianinvestments.github.io/investAPI/instruments#sharetype)</code>.</td>
+<td>Тип акции. Возможные значения: <a href="https://russianinvestments.github.io/investAPI/instruments#sharetype">ShareType</a></td>
 </tr>
 <tr>
 <td>min_price_increment</td>
@@ -7715,7 +7664,7 @@
 <tr>
 <td>api_trade_available_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Возможность торговать инструментом через API.</td>
+<td>Параметр указывает на возможность торговать инструментом через API.</td>
 </tr>
 <tr>
 <td>uid</td>
@@ -7738,11 +7687,6 @@
 <td>Уникальный идентификатор актива.</td>
 </tr>
 <tr>
-<td>instrument_exchange</td>
-<td><a href="#instrumentexchangetype">InstrumentExchangeType</a></td>
-<td>Тип площадки торговли.</td>
-</tr>
-<tr>
 <td>for_iis_flag</td>
 <td><a href="#bool">bool</a></td>
 <td>Признак доступности для ИИС.</td>
@@ -7750,22 +7694,22 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг заблокированного ТКС.</td>
+<td>Флаг заблокированного ТКС</td>
 </tr>
 <tr>
 <td>liquidity_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг достаточной ликвидности.</td>
+<td>Флаг достаточной ликвидности</td>
 </tr>
 <tr>
 <td>first_1min_candle_date</td>
@@ -7792,7 +7736,7 @@
 <!-- end HasFields -->
 
 <h4 id="getaccruedinterestsrequest">GetAccruedInterestsRequest</h4>
-<p>Запрос НКД по облигации.</p>
+<p>Запрос НКД по облигации</p>
 <table>
 <thead>
 <tr>
@@ -7805,22 +7749,22 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало запрашиваемого периода по UTC.</td>
+<td>Начало запрашиваемого периода в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание запрашиваемого периода по UTC.</td>
+<td>Окончание запрашиваемого периода в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента — <code>figi</code> или <code>instrument_uid</code>.</td>
+<td>Идентификатор инструмента Figi или instrument_uid</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -7832,7 +7776,7 @@
 <!-- end HasFields -->
 
 <h4 id="getaccruedinterestsresponse">GetAccruedInterestsResponse</h4>
-<p>НКД облигации.</p>
+<p>НКД облигации</p>
 <table>
 <thead>
 <tr>
@@ -7870,7 +7814,7 @@
 <tr>
 <td>date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время выплаты по UTC.</td>
+<td>Дата и время выплаты в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>value</td>
@@ -7915,7 +7859,7 @@
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента — <code>figi</code> или <code>instrument_uid</code>.</td>
+<td>Идентификатор инструмента Figi или instrument_uid</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -8005,7 +7949,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -8020,12 +7964,12 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN-идентификатор инструмента.</td>
+<td>Isin-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>lot</td>
 <td><a href="#int32">int32</a></td>
-<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <code>lot</code>. <a href="https://russianinvestments.github.io/investAPI/glossary#lot">Подробнее</a>.</td>
+<td>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру <em>lot</em>. Подробнее: <a href="https://russianinvestments.github.io/investAPI/glossary#lot">лот</a></td>
 </tr>
 <tr>
 <td>currency</td>
@@ -8035,32 +7979,32 @@
 <tr>
 <td>klong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>kshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР); 1 – клиент с повышенным уровнем риска (КПУР).</td>
+<td>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</td>
 </tr>
 <tr>
 <td>dlong</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КСУР лонг.Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КСУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КСУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>dlong_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР лонг. <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">Подробнее про ставки риска в лонг</a>.</td>
+<td>Ставка риска начальной маржи для КПУР лонг. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/long/risk-rate/">ставка риска в лонг</a></td>
 </tr>
 <tr>
 <td>dshort_min</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка риска начальной маржи для КПУР шорт. <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">Подробнее про ставки риска в шорт</a>.</td>
+<td>Ставка риска начальной маржи для КПУР шорт. Подробнее: <a href="https://help.tinkoff.ru/margin-trade/short/risk-rate/">ставка риска в шорт</a></td>
 </tr>
 <tr>
 <td>short_enabled_flag</td>
@@ -8080,12 +8024,12 @@
 <tr>
 <td>country_of_risk</td>
 <td><a href="#string">string</a></td>
-<td>Код страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>country_of_risk_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование страны риска — то есть страны, в которой компания ведёт основной бизнес.</td>
+<td>Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</td>
 </tr>
 <tr>
 <td>instrument_type</td>
@@ -8150,17 +8094,17 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг заблокированного ТКС.</td>
+<td>Флаг заблокированного ТКС</td>
 </tr>
 <tr>
 <td>instrument_kind</td>
@@ -8205,22 +8149,22 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало запрашиваемого периода по UTC. Фильтрация происходит по параметру <code>record_date</code> — дата фиксации реестра.</td>
+<td>Начало запрашиваемого периода в часовом поясе UTC. Фильтрация происходит по параметру <em>record_date</em> (дата фиксации реестра).</td>
 </tr>
 <tr>
 <td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание запрашиваемого периода по UTC. Фильтрация происходит по параметру <code>record_date</code> — дата фиксации реестра.</td>
+<td>Окончание запрашиваемого периода в часовом поясе UTC. Фильтрация происходит по параметру <em>record_date</em> (дата фиксации реестра).</td>
 </tr>
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента — <code>figi</code> или <code>instrument_uid</code>.</td>
+<td>Идентификатор инструмента Figi или instrument_uid</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -8275,37 +8219,37 @@
 <tr>
 <td>payment_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата фактических выплат по UTC.</td>
+<td>Дата фактических выплат в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>declared_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата объявления дивидендов по UTC.</td>
+<td>Дата объявления дивидендов в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>last_buy_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Последний день (включительно) покупки для получения выплаты по UTC.</td>
+<td>Последний день (включительно) покупки для получения выплаты в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>dividend_type</td>
 <td><a href="#string">string</a></td>
-<td>Тип выплаты. Возможные значения: <code>Regular Cash</code> – регулярные выплаты, <code>Cancelled</code> – выплата отменена, <code>Daily Accrual</code> – ежедневное начисление, <code>Return of Capital</code> – возврат капитала, прочие типы выплат.</td>
+<td>Тип выплаты. Возможные значения: Regular Cash – регулярные выплаты, Cancelled – выплата отменена, Daily Accrual – ежедневное начисление, Return of Capital – возврат капитала, прочие типы выплат.</td>
 </tr>
 <tr>
 <td>record_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата фиксации реестра по UTC.</td>
+<td>Дата фиксации реестра в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>regularity</td>
 <td><a href="#string">string</a></td>
-<td>Регулярность выплаты. Возможные значения: <code>Annual</code> – ежегодная, <code>Semi-Anl</code> – каждые полгода, прочие типы выплат.</td>
+<td>Регулярность выплаты. Возможные значения: Annual – ежегодная, Semi-Anl – каждые полгода, прочие типы выплат.</td>
 </tr>
 <tr>
 <td>close_price</td>
 <td><a href="#moneyvalue">MoneyValue</a></td>
-<td>Цена закрытия инструмента на момент <code>ex_dividend_date</code>.</td>
+<td>Цена закрытия инструмента на момент ex_dividend_date.</td>
 </tr>
 <tr>
 <td>yield_value</td>
@@ -8315,7 +8259,7 @@
 <tr>
 <td>created_at</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время создания записи по UTC.</td>
+<td>Дата и время создания записи в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -8340,7 +8284,7 @@
 <tr>
 <td>id</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор актива.</td>
+<td>uid-идентификатор актива.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -8474,12 +8418,12 @@
 <tr>
 <td>currency</td>
 <td><a href="#assetcurrency">AssetCurrency</a></td>
-<td>Валюта. Обязательно и заполняется только для <code>type = ASSET_TYPE_CURRENCY</code>.</td>
+<td>Валюта. Обязательно и заполняется только для type = "ASSET_TYPE_CURRENCY".</td>
 </tr>
 <tr>
 <td>security</td>
 <td><a href="#assetsecurity">AssetSecurity</a></td>
-<td>Ценная бумага. Обязательно и заполняется только для <code>type = ASSET_TYPE_SECURITY</code>.</td>
+<td>Ценная бумага. Обязательно и заполняется только для type = "ASSET_TYPE_SECURITY".</td>
 </tr>
 <tr>
 <td>gos_reg_code</td>
@@ -8629,27 +8573,27 @@
 <tr>
 <td>share</td>
 <td><a href="#assetshare">AssetShare</a></td>
-<td>Акция. Заполняется только для акций — тип актива <code>asset.type = ASSET_TYPE_SECURITY</code> и <code>security.type = share</code>.</td>
+<td>Акция. Заполняется только для акций (тип актива asset.type = "ASSET_TYPE_SECURITY" и security.type = share).</td>
 </tr>
 <tr>
 <td>bond</td>
 <td><a href="#assetbond">AssetBond</a></td>
-<td>Облигация. Заполняется только для облигаций — тип актива <code>asset.type = ASSET_TYPE_SECURITY</code> и <code>security.type = bond</code>.</td>
+<td>Облигация. Заполняется только для облигаций (тип актива asset.type = "ASSET_TYPE_SECURITY" и security.type = bond).</td>
 </tr>
 <tr>
 <td>sp</td>
 <td><a href="#assetstructuredproduct">AssetStructuredProduct</a></td>
-<td>Структурная нота. Заполняется только для структурных продуктов — тип актива <code>asset.type = ASSET_TYPE_SECURITY</code> и <code>security.type = sp</code>.</td>
+<td>Структурная нота. Заполняется только для структурных продуктов (тип актива asset.type = "ASSET_TYPE_SECURITY" и security.type = sp).</td>
 </tr>
 <tr>
 <td>etf</td>
 <td><a href="#assetetf">AssetEtf</a></td>
-<td>Фонд. Заполняется только для фондов — тип актива <code>asset.type = ASSET_TYPE_SECURITY</code> и <code>security.type = etf</code>.</td>
+<td>Фонд. Заполняется только для фондов (тип актива asset.type = "ASSET_TYPE_SECURITY" и security.type = etf).</td>
 </tr>
 <tr>
 <td>clearing_certificate</td>
 <td><a href="#assetclearingcertificate">AssetClearingCertificate</a></td>
-<td>Клиринговый сертификат участия. Заполняется только для клиринговых сертификатов — тип актива <code>asset.type = ASSET_TYPE_SECURITY</code> и security.type = <code>clearing_certificate</code>.</td>
+<td>Клиринговый сертификат участия. Заполняется только для клиринговых сертификатов (тип актива asset.type = "ASSET_TYPE_SECURITY" и security.type = clearing_certificate).</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -8739,7 +8683,7 @@
 <tr>
 <td>issue_size_plan</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Объявленное количество, шт.</td>
+<td>Объявленное количество шт.</td>
 </tr>
 <tr>
 <td>total_float</td>
@@ -8824,7 +8768,7 @@
 <tr>
 <td>tax_free_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Признак показывает, что купоны облигации не облагаются налогом — для mass market.</td>
+<td>Признак показывает, что купоны облигации не облагаются налогом (для mass market).</td>
 </tr>
 <tr>
 <td>amortization_flag</td>
@@ -8869,7 +8813,7 @@
 <tr>
 <td>issue_size_plan</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Объявленное количество, шт.</td>
+<td>Объявленное количество шт.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -8894,7 +8838,7 @@
 <tr>
 <td>borrow_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование заёмщика.</td>
+<td>Наименование заемщика.</td>
 </tr>
 <tr>
 <td>nominal</td>
@@ -8929,7 +8873,7 @@
 <tr>
 <td>safety_barrier</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Барьер сохранности в процентах.</td>
+<td>Барьер сохранности (в процентах).</td>
 </tr>
 <tr>
 <td>maturity_date</td>
@@ -8939,12 +8883,12 @@
 <tr>
 <td>issue_size_plan</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Объявленное количество, шт.</td>
+<td>Объявленное количество шт.</td>
 </tr>
 <tr>
 <td>issue_size</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Объём размещения.</td>
+<td>Объем размещения.</td>
 </tr>
 <tr>
 <td>placement_date</td>
@@ -8979,22 +8923,22 @@
 <tr>
 <td>total_expense</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Суммарные расходы фонда в процентах.</td>
+<td>Суммарные расходы фонда (в %).</td>
 </tr>
 <tr>
 <td>hurdle_rate</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Барьерная ставка доходности, после которой фонд имеет право на perfomance fee — в процентах.</td>
+<td>Барьерная ставка доходности после которой фонд имеет право на perfomance fee (в процентах).</td>
 </tr>
 <tr>
 <td>performance_fee</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Комиссия за успешные результаты фонда в процентах.</td>
+<td>Комиссия за успешные результаты фонда (в процентах).</td>
 </tr>
 <tr>
 <td>fixed_commission</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Фиксированная комиссия за управление в процентах.</td>
+<td>Фиксированная комиссия за управление (в процентах).</td>
 </tr>
 <tr>
 <td>payment_type</td>
@@ -9009,12 +8953,12 @@
 <tr>
 <td>buy_premium</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Премия (надбавка к цене) при покупке доли в фонде — в процентах.</td>
+<td>Премия (надбавка к цене) при покупке доли в фонде (в процентах).</td>
 </tr>
 <tr>
 <td>sell_discount</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ставка дисконта (вычет из цены) при продаже доли в фонде — в процентах.</td>
+<td>Ставка дисконта (вычет из цены) при продаже доли в фонде (в процентах).</td>
 </tr>
 <tr>
 <td>rebalancing_flag</td>
@@ -9079,7 +9023,7 @@
 <tr>
 <td>index_recovery_period</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Срок восстановления индекса после просадки.</td>
+<td>Срок восстановления индекса (после просадки).</td>
 </tr>
 <tr>
 <td>inav_code</td>
@@ -9094,12 +9038,12 @@
 <tr>
 <td>expense_commission</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Комиссия на покрытие расходов фонда в процентах.</td>
+<td>Комиссия на покрытие расходов фонда (в процентах).</td>
 </tr>
 <tr>
 <td>primary_index_tracking_error</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Ошибка следования за индексом в процентах.</td>
+<td>Ошибка следования за индексом (в процентах).</td>
 </tr>
 <tr>
 <td>rebalancing_plan</td>
@@ -9184,7 +9128,7 @@
 <tr>
 <td>uid</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор бренда.</td>
+<td>uid идентификатор бренда.</td>
 </tr>
 <tr>
 <td>name</td>
@@ -9244,12 +9188,12 @@
 <tr>
 <td>uid</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор инструмента.</td>
+<td>uid идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>figi идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>instrument_type</td>
@@ -9279,7 +9223,7 @@
 <tr>
 <td>position_uid</td>
 <td><a href="#string">string</a></td>
-<td>ID позиции.</td>
+<td>id позиции.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9309,7 +9253,7 @@
 <tr>
 <td>instrument_uid</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор связанного инструмента.</td>
+<td>uid идентификатор связанного инструмента.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9338,7 +9282,7 @@
 <tr>
 <td>favorite_instruments</td>
 <td>Массив объектов <a href="#favoriteinstrument">FavoriteInstrument</a></td>
-<td>Массив инструментов.</td>
+<td>Массив инструментов</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9363,7 +9307,7 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -9378,7 +9322,7 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN-идентификатор инструмента.</td>
+<td>Isin-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>instrument_type</td>
@@ -9403,7 +9347,7 @@
 <tr>
 <td>api_trade_available_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Возможность торговать инструментом через API.</td>
+<td>Параметр указывает на возможность торговать инструментом через API.</td>
 </tr>
 <tr>
 <td>instrument_kind</td>
@@ -9463,12 +9407,12 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента.</td>
 </tr>
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента — <code>figi</code> или <code>instrument_uid</code>.</td>
+<td>Идентификатор инструмента Figi или instrument_uid</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9493,7 +9437,7 @@
 <tr>
 <td>favorite_instruments</td>
 <td>Массив объектов <a href="#favoriteinstrument">FavoriteInstrument</a></td>
-<td>Массив инструментов.</td>
+<td>Массив инструментов</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9551,7 +9495,7 @@
 <tr>
 <td>instruments</td>
 <td>Массив объектов <a href="#indicativeresponse">IndicativeResponse</a></td>
-<td>Массив инструментов.</td>
+<td>Массив инструментов</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9576,22 +9520,22 @@
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI-идентификатор инструмента.</td>
+<td>Figi-идентификатор инструмента</td>
 </tr>
 <tr>
 <td>ticker</td>
 <td><a href="#string">string</a></td>
-<td>Тикер инструмента.</td>
+<td>Тикер инструмента</td>
 </tr>
 <tr>
 <td>class_code</td>
 <td><a href="#string">string</a></td>
-<td>Класс-код инструмента.</td>
+<td>Класс-код инструмента</td>
 </tr>
 <tr>
 <td>currency</td>
 <td><a href="#string">string</a></td>
-<td>Валюта расчётов.</td>
+<td>Валюта расчётов</td>
 </tr>
 <tr>
 <td>instrument_kind</td>
@@ -9601,27 +9545,27 @@
 <tr>
 <td>name</td>
 <td><a href="#string">string</a></td>
-<td>Название инструмента.</td>
+<td>Название инструмента</td>
 </tr>
 <tr>
 <td>exchange</td>
 <td><a href="#string">string</a></td>
-<td>Tорговая площадка (секция биржи).</td>
+<td>Tорговая площадка (секция биржи)</td>
 </tr>
 <tr>
 <td>uid</td>
 <td><a href="#string">string</a></td>
-<td>Уникальный идентификатор инструмента.</td>
+<td>Уникальный идентификатор инструмента</td>
 </tr>
 <tr>
 <td>buy_available_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Признак доступности для покупки.</td>
+<td>Признак доступности для покупки</td>
 </tr>
 <tr>
 <td>sell_available_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Признак доступности для продажи.</td>
+<td>Признак доступности для продажи</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9746,12 +9690,12 @@
 <tr>
 <td>isin</td>
 <td><a href="#string">string</a></td>
-<td>ISIN инструмента.</td>
+<td>Isin инструмента.</td>
 </tr>
 <tr>
 <td>figi</td>
 <td><a href="#string">string</a></td>
-<td>FIGI инструмента.</td>
+<td>Figi инструмента.</td>
 </tr>
 <tr>
 <td>ticker</td>
@@ -9791,7 +9735,7 @@
 <tr>
 <td>api_trade_available_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Возможность торговать инструментом через API.</td>
+<td>Параметр указывает на возможность торговать инструментом через API.</td>
 </tr>
 <tr>
 <td>for_iis_flag</td>
@@ -9811,17 +9755,17 @@
 <tr>
 <td>for_qual_investor_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
+<td>Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</td>
 </tr>
 <tr>
 <td>weekend_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг, отображающий доступность торговли инструментом по выходным.</td>
+<td>Флаг отображающий доступность торговли инструментом по выходным</td>
 </tr>
 <tr>
 <td>blocked_tca_flag</td>
 <td><a href="#bool">bool</a></td>
-<td>Флаг заблокированного ТКС.</td>
+<td>Флаг заблокированного ТКС</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9871,7 +9815,7 @@
 <tr>
 <td>id</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор бренда.</td>
+<td>Uid-идентификатор бренда.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9901,7 +9845,7 @@
 <tr>
 <td>paging</td>
 <td><a href="#pageresponse">PageResponse</a></td>
-<td>Данные по пагинации.</td>
+<td>Данные по пагинации</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9926,7 +9870,7 @@
 <tr>
 <td>assets</td>
 <td>Массив объектов <a href="#string">string</a></td>
-<td>Массив идентификаторов активов, не более 100 шт.</td>
+<td>Массив идентификаторов активов (не более 100 шт.).</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -9976,37 +9920,37 @@
 <tr>
 <td>asset_uid</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор актива.</td>
+<td>Идентификатор актива</td>
 </tr>
 <tr>
 <td>currency</td>
 <td><a href="#string">string</a></td>
-<td>Валюта.</td>
+<td>Валюта</td>
 </tr>
 <tr>
 <td>market_capitalization</td>
 <td><a href="#double">double</a></td>
-<td>Рыночная капитализация.</td>
+<td>Рыночная капитализация</td>
 </tr>
 <tr>
 <td>high_price_last_52_weeks</td>
 <td><a href="#double">double</a></td>
-<td>Максимум за год.</td>
+<td>Максимум за год</td>
 </tr>
 <tr>
 <td>low_price_last_52_weeks</td>
 <td><a href="#double">double</a></td>
-<td>Минимум за год.</td>
+<td>Минимум за год</td>
 </tr>
 <tr>
 <td>average_daily_volume_last_10_days</td>
 <td><a href="#double">double</a></td>
-<td>Средний объём торгов за 10 дней.</td>
+<td>Средний объем торгов за 10 дней</td>
 </tr>
 <tr>
 <td>average_daily_volume_last_4_weeks</td>
 <td><a href="#double">double</a></td>
-<td>Средний объём торгов за месяц.</td>
+<td>Средний объем торгов за месяц</td>
 </tr>
 <tr>
 <td>beta</td>
@@ -10016,7 +9960,7 @@
 <tr>
 <td>free_float</td>
 <td><a href="#double">double</a></td>
-<td>Доля акций в свободном обращении.</td>
+<td>Доля акций в свободном обращении</td>
 </tr>
 <tr>
 <td>forward_annual_dividend_yield</td>
@@ -10026,192 +9970,192 @@
 <tr>
 <td>shares_outstanding</td>
 <td><a href="#double">double</a></td>
-<td>Количество акций в обращении.</td>
+<td>Количество акций в обращении</td>
 </tr>
 <tr>
 <td>revenue_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Выручка.</td>
+<td>Выручка</td>
 </tr>
 <tr>
 <td>ebitda_ttm</td>
 <td><a href="#double">double</a></td>
-<td>EBITDA — прибыль до вычета процентов, налогов, износа и амортизации.</td>
+<td>EBITDA Прибыль до вычета процентов, налогов, износа и амортизации</td>
 </tr>
 <tr>
 <td>net_income_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Чистая прибыль.</td>
+<td>Чистая прибыль</td>
 </tr>
 <tr>
 <td>eps_ttm</td>
 <td><a href="#double">double</a></td>
-<td>EPS — величина чистой прибыли компании, которая приходится на каждую обыкновенную акцию.</td>
+<td>EPS Величина чистой прибыли компании, приходящуюся на каждую обыкновенную акцию</td>
 </tr>
 <tr>
 <td>diluted_eps_ttm</td>
 <td><a href="#double">double</a></td>
-<td>EPS компании с допущением, что все конвертируемые ценные бумаги компании были сконвертированы в обыкновенные акции.</td>
+<td>EPS компании с допущением, что все конвертируемые ценные бумаги компании были сконвертированы в обыкновенные акции</td>
 </tr>
 <tr>
 <td>free_cash_flow_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Свободный денежный поток.</td>
+<td>Свободный денежный поток</td>
 </tr>
 <tr>
 <td>five_year_annual_revenue_growth_rate</td>
 <td><a href="#double">double</a></td>
-<td>Среднегодовой  рocт выручки за 5 лет.</td>
+<td>Среднегодовой  рocт выручки (за 5 лет)</td>
 </tr>
 <tr>
 <td>three_year_annual_revenue_growth_rate</td>
 <td><a href="#double">double</a></td>
-<td>Среднегодовой  рocт выручки за 3 года.</td>
+<td>Среднегодовой  рocт выручки (за 3 года)</td>
 </tr>
 <tr>
 <td>pe_ratio_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение рыночной капитализации компании к её чистой прибыли.</td>
+<td>Показывает соотношение рыночной капитализации компании к ее чистой прибыли</td>
 </tr>
 <tr>
 <td>price_to_sales_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение рыночной капитализации компании к её выручке.</td>
+<td>Показывает соотношение рыночной капитализации компании к ее выручке</td>
 </tr>
 <tr>
 <td>price_to_book_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение рыночной капитализации компании к её балансовой стоимости.</td>
+<td>Показывает соотношение рыночной капитализации компании к ее балансовой стоимости</td>
 </tr>
 <tr>
 <td>price_to_free_cash_flow_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение рыночной капитализации компании к её свободному денежному потоку.</td>
+<td>Показывает соотношение рыночной капитализации компании к ее свободному денежному потоку</td>
 </tr>
 <tr>
 <td>total_enterprise_value_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Рыночная стоимость компании.</td>
+<td>Рыночная стоимость компании</td>
 </tr>
 <tr>
 <td>ev_to_ebitda_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение EV и EBITDA.</td>
+<td>Соотношение EV и EBITDA</td>
 </tr>
 <tr>
 <td>net_margin_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Маржа чистой прибыли.</td>
+<td>Маржа чистой прибыли</td>
 </tr>
 <tr>
 <td>net_interest_margin_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Рентабельность чистой прибыли.</td>
+<td>Рентабельность чистой прибыли</td>
 </tr>
 <tr>
 <td>roe</td>
 <td><a href="#double">double</a></td>
-<td>Рентабельность собственного капитала.</td>
+<td>Рентабельность собственного капитала</td>
 </tr>
 <tr>
 <td>roa</td>
 <td><a href="#double">double</a></td>
-<td>Рентабельность активов.</td>
+<td>Рентабельность активов</td>
 </tr>
 <tr>
 <td>roic</td>
 <td><a href="#double">double</a></td>
-<td>Рентабельность активов.</td>
+<td>Рентабельность активов</td>
 </tr>
 <tr>
 <td>total_debt_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Сумма краткосрочных и долгосрочных обязательств компании.</td>
+<td>Сумма краткосрочных и долгосрочных обязательств компании</td>
 </tr>
 <tr>
 <td>total_debt_to_equity_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение долга к собственному капиталу.</td>
+<td>Соотношение долга к собственному капиталу</td>
 </tr>
 <tr>
 <td>total_debt_to_ebitda_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Total Debt/EBITDA.</td>
+<td>Total Debt/EBITDA</td>
 </tr>
 <tr>
 <td>free_cash_flow_to_price</td>
 <td><a href="#double">double</a></td>
-<td>Отношение свободногоо кэша к стоимости.</td>
+<td>Отношение свободглго кэша к стоимости</td>
 </tr>
 <tr>
 <td>net_debt_to_ebitda</td>
 <td><a href="#double">double</a></td>
-<td>Отношение чистого долга к EBITDA.</td>
+<td>Отношение чистого долга к ebitda</td>
 </tr>
 <tr>
 <td>current_ratio_mrq</td>
 <td><a href="#double">double</a></td>
-<td>Коэффициент текущей ликвидности.</td>
+<td>Коэффициент текущей ликвидности</td>
 </tr>
 <tr>
 <td>fixed_charge_coverage_ratio_fy</td>
 <td><a href="#double">double</a></td>
-<td>Коэффициент покрытия фиксированных платежей — FCCR.</td>
+<td>Коэффициент покрытия фиксированных платежей (FCCR)</td>
 </tr>
 <tr>
 <td>dividend_yield_daily_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Дивидендная доходность за 12 месяцев.</td>
+<td>Дивидендная доходность за 12 мес</td>
 </tr>
 <tr>
 <td>dividend_rate_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Выплаченные дивиденды за 12 месяцев.</td>
+<td>Выплаченные дивиденды за 12 мес.</td>
 </tr>
 <tr>
 <td>dividends_per_share</td>
 <td><a href="#double">double</a></td>
-<td>Значение дивидендов на акцию.</td>
+<td>Значение дивидендов на акцию</td>
 </tr>
 <tr>
 <td>five_years_average_dividend_yield</td>
 <td><a href="#double">double</a></td>
-<td>Средняя дивидендная доходность за 5 лет.</td>
+<td>Средняя дивидендная доходность за 5 лет</td>
 </tr>
 <tr>
 <td>five_year_annual_dividend_growth_rate</td>
 <td><a href="#double">double</a></td>
-<td>Среднегодовой рост дивидендов за 5 лет.</td>
+<td>Среднегодовой рост дивидендов за 5 лет</td>
 </tr>
 <tr>
 <td>dividend_payout_ratio_fy</td>
 <td><a href="#double">double</a></td>
-<td>Процент чистой прибыли, уходящий на выплату дивидендов.</td>
+<td>Процент чистой прибыли, уходящий на выплату дивидендов</td>
 </tr>
 <tr>
 <td>buy_back_ttm</td>
 <td><a href="#double">double</a></td>
-<td>Деньги, потраченные на обратный выкуп акций.</td>
+<td>Деньги, потраченные на обратный выкуп акций</td>
 </tr>
 <tr>
 <td>one_year_annual_revenue_growth_rate</td>
 <td><a href="#double">double</a></td>
-<td>Рост выручки за 1 год.</td>
+<td>Рост выручки за 1 год</td>
 </tr>
 <tr>
 <td>domicile_indicator_code</td>
 <td><a href="#string">string</a></td>
-<td>Код страны.</td>
+<td>Код страны</td>
 </tr>
 <tr>
 <td>adr_to_common_share_ratio</td>
 <td><a href="#double">double</a></td>
-<td>Соотношение депозитарной расписки к акциям.</td>
+<td>Соотношение депозитарной расписки к акциям</td>
 </tr>
 <tr>
 <td>number_of_employees</td>
 <td><a href="#double">double</a></td>
-<td>Количество сотрудников.</td>
+<td>Количество сотрудников</td>
 </tr>
 <tr>
 <td>ex_dividend_date</td>
@@ -10221,37 +10165,37 @@
 <tr>
 <td>fiscal_period_start_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало фискального периода.</td>
+<td>Начало фискального периода</td>
 </tr>
 <tr>
 <td>fiscal_period_end_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание фискального периода.</td>
+<td>Конец фискального периода</td>
 </tr>
 <tr>
 <td>revenue_change_five_years</td>
 <td><a href="#double">double</a></td>
-<td>Изменение общего дохода за 5 лет.</td>
+<td>Изменение общего дохода за 5 лет</td>
 </tr>
 <tr>
 <td>eps_change_five_years</td>
 <td><a href="#double">double</a></td>
-<td>Изменение EPS за 5 лет.</td>
+<td>Изменение eps за 5 лет</td>
 </tr>
 <tr>
 <td>ebitda_change_five_years</td>
 <td><a href="#double">double</a></td>
-<td>Изменение EBIDTA за 5 лет.</td>
+<td>Изменение ebitda за 5 лет</td>
 </tr>
 <tr>
 <td>total_debt_change_five_years</td>
 <td><a href="#double">double</a></td>
-<td>Изменение общей задолжности за 5 лет.</td>
+<td>Изменение общей задолжности за 5 лет</td>
 </tr>
 <tr>
 <td>ev_to_sales</td>
 <td><a href="#double">double</a></td>
-<td>Отношение EV к выручке.</td>
+<td>Отношение EV к выручке</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10276,17 +10220,17 @@
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента в формате UID.</td>
+<td>Идентификатор инструмента в формате uid.</td>
 </tr>
 <tr>
 <td>from</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Начало запрашиваемого периода по UTC.</td>
+<td>Начало запрашиваемого периода в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td>to</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Окончание запрашиваемого периода по UTC.</td>
+<td>Окончание запрашиваемого периода в часовом поясе UTC.</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10311,7 +10255,7 @@
 <tr>
 <td>events</td>
 <td>Массив объектов <a href="#getassetreportsresponsegetassetreportsevent">GetAssetReportsResponse.GetAssetReportsEvent</a></td>
-<td>Массив событий по облигации.</td>
+<td>Массив событий по облигации</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10341,7 +10285,7 @@
 <tr>
 <td>report_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата публикации отчёта.</td>
+<td>Дата публикации отчета.</td>
 </tr>
 <tr>
 <td>period_year</td>
@@ -10356,7 +10300,7 @@
 <tr>
 <td>period_type</td>
 <td><a href="#getassetreportsresponseassetreportperiodtype">GetAssetReportsResponse.AssetReportPeriodType</a></td>
-<td>Тип отчёта.</td>
+<td>Тип отчета.</td>
 </tr>
 <tr>
 <td>created_at</td>
@@ -10411,12 +10355,12 @@
 <tr>
 <td>items</td>
 <td>Массив объектов <a href="#getconsensusforecastsresponseconsensusforecastsitem">GetConsensusForecastsResponse.ConsensusForecastsItem</a></td>
-<td>Массив прогнозов.</td>
+<td>Массив прогнозов</td>
 </tr>
 <tr>
 <td>page</td>
 <td><a href="#pageresponse">PageResponse</a></td>
-<td>Данные по пагинации.</td>
+<td>Данные по пагинации</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10441,62 +10385,62 @@
 <tr>
 <td>uid</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор.</td>
+<td>uid идентификатор</td>
 </tr>
 <tr>
 <td>asset_uid</td>
 <td><a href="#string">string</a></td>
-<td>UID-идентификатор актива.</td>
+<td>uid идентификатор актива</td>
 </tr>
 <tr>
 <td>created_at</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата и время создания записи.</td>
+<td>Дата и время создания записи</td>
 </tr>
 <tr>
 <td>best_target_price</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Целевая цена на 12 месяцев.</td>
+<td>Целевая цена на 12 месяцев</td>
 </tr>
 <tr>
 <td>best_target_low</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Минимальная прогнозная цена.</td>
+<td>Минимальная прогнозная цена</td>
 </tr>
 <tr>
 <td>best_target_high</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Максимальная прогнозная цена.</td>
+<td>Максимальная прогнозная цена</td>
 </tr>
 <tr>
 <td>total_buy_recommend</td>
 <td><a href="#int32">int32</a></td>
-<td>Количество аналитиков рекомендующих покупать.</td>
+<td>Количество аналитиков рекомендующих покупать</td>
 </tr>
 <tr>
 <td>total_hold_recommend</td>
 <td><a href="#int32">int32</a></td>
-<td>Количество аналитиков рекомендующих держать.</td>
+<td>Количество аналитиков рекомендующих держать</td>
 </tr>
 <tr>
 <td>total_sell_recommend</td>
 <td><a href="#int32">int32</a></td>
-<td>Количество аналитиков рекомендующих продавать.</td>
+<td>Количество аналитиков рекомендующих продавать</td>
 </tr>
 <tr>
 <td>currency</td>
 <td><a href="#string">string</a></td>
-<td>Валюта прогнозов инструмента.</td>
+<td>Валюта прогнозов /инструмента</td>
 </tr>
 <tr>
 <td>consensus</td>
 <td><a href="#recommendation">Recommendation</a></td>
-<td>Консенсус-прогноз.</td>
+<td>Консенсус-прогноз</td>
 </tr>
 <tr>
 <td>prognosis_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата прогноза.</td>
+<td>Дата прогноза</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10508,7 +10452,7 @@
 <!-- end HasFields -->
 
 <h4 id="getforecastrequest">GetForecastRequest</h4>
-<p>Запрос прогнозов инвестдомов.</p>
+<p>Запрос прогнозов инвестдомов</p>
 <table>
 <thead>
 <tr>
@@ -10521,7 +10465,7 @@
 <tr>
 <td>instrument_id</td>
 <td><a href="#string">string</a></td>
-<td>Идентификатор инструмента.</td>
+<td>Идентификатор инструмента</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10533,7 +10477,7 @@
 <!-- end HasFields -->
 
 <h4 id="getforecastresponse">GetForecastResponse</h4>
-<p>Прогнозы инвестдомов по инструменту.</p>
+<p>Прогнозы инвестдомов по инструменту</p>
 <table>
 <thead>
 <tr>
@@ -10546,12 +10490,12 @@
 <tr>
 <td>targets</td>
 <td>Массив объектов <a href="#getforecastresponsetargetitem">GetForecastResponse.TargetItem</a></td>
-<td>Массив прогнозов.</td>
+<td>Массив прогнозов</td>
 </tr>
 <tr>
 <td>consensus</td>
 <td><a href="#getforecastresponseconsensusitem">GetForecastResponse.ConsensusItem</a></td>
-<td>Согласованный прогноз.</td>
+<td>Согласованный прогноз</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10576,57 +10520,57 @@
 <tr>
 <td>uid</td>
 <td><a href="#string">string</a></td>
-<td>Уникальный идентификатор инструмента.</td>
+<td>Уникальный идентификатор инструмента</td>
 </tr>
 <tr>
 <td>ticker</td>
 <td><a href="#string">string</a></td>
-<td>Тикер инструмента.</td>
+<td>Тикер инструмента</td>
 </tr>
 <tr>
 <td>company</td>
 <td><a href="#string">string</a></td>
-<td>Название компании, давшей прогноз.</td>
+<td>Название компании, давшей прогноз</td>
 </tr>
 <tr>
 <td>recommendation</td>
 <td><a href="#recommendation">Recommendation</a></td>
-<td>Прогноз.</td>
+<td>Прогноз</td>
 </tr>
 <tr>
 <td>recommendation_date</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Дата прогноза.</td>
+<td>Дата прогноза</td>
 </tr>
 <tr>
 <td>currency</td>
 <td><a href="#string">string</a></td>
-<td>Валюта.</td>
+<td>Валюта</td>
 </tr>
 <tr>
 <td>current_price</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Текущая цена.</td>
+<td>Текущая цена</td>
 </tr>
 <tr>
 <td>target_price</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Прогнозируемая цена.</td>
+<td>Прогнозируемая цена</td>
 </tr>
 <tr>
 <td>price_change</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Изменение цены.</td>
+<td>Изменение цены</td>
 </tr>
 <tr>
 <td>price_change_rel</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Относительное изменение цены.</td>
+<td>Относительное изменение цены</td>
 </tr>
 <tr>
 <td>show_name</td>
 <td><a href="#string">string</a></td>
-<td>Наименование инструмента.</td>
+<td>Наименование инструмента</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10638,7 +10582,7 @@
 <!-- end HasFields -->
 
 <h4 id="getforecastresponseconsensusitem">GetForecastResponse.ConsensusItem</h4>
-<p>Консенсус-прогноз.</p>
+<p>Консенсус-прогноз</p>
 <table>
 <thead>
 <tr>
@@ -10651,52 +10595,52 @@
 <tr>
 <td>uid</td>
 <td><a href="#string">string</a></td>
-<td>Уникальный идентификатор инструмента.</td>
+<td>Уникальный идентификатор инструмента</td>
 </tr>
 <tr>
 <td>ticker</td>
 <td><a href="#string">string</a></td>
-<td>Тикер инструмента.</td>
+<td>Тикер инструмента</td>
 </tr>
 <tr>
 <td>recommendation</td>
 <td><a href="#recommendation">Recommendation</a></td>
-<td>Прогноз.</td>
+<td>Прогноз</td>
 </tr>
 <tr>
 <td>currency</td>
 <td><a href="#string">string</a></td>
-<td>Валюта.</td>
+<td>Валюта</td>
 </tr>
 <tr>
 <td>current_price</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Текущая цена.</td>
+<td>Текущая цена</td>
 </tr>
 <tr>
 <td>consensus</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Прогнозируемая цена.</td>
+<td>Прогнозируемая цена</td>
 </tr>
 <tr>
 <td>min_target</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Минимальная цена прогноза.</td>
+<td>Минимальная цена прогноза</td>
 </tr>
 <tr>
 <td>max_target</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Максимальная цена прогноза.</td>
+<td>Максимальная цена прогноза</td>
 </tr>
 <tr>
 <td>price_change</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Изменение цены.</td>
+<td>Изменение цены</td>
 </tr>
 <tr>
 <td>price_change_rel</td>
 <td><a href="#quotation">Quotation</a></td>
-<td>Относительное изменение цены.</td>
+<td>Относительное изменение цены</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10720,7 +10664,12 @@
 <tr>
 <td>type</td>
 <td><a href="#string">string</a></td>
-<td>Название интервала.</td>
+<td>Название интервала</td>
+</tr>
+<tr>
+<td>interval</td>
+<td><a href="#tradingintervaltimeinterval">TradingInterval.TimeInterval</a></td>
+<td>Интервал</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10744,12 +10693,12 @@
 <tr>
 <td>start_ts</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время начала интервала.</td>
+<td>Время начала интервала</td>
 </tr>
 <tr>
 <td>end_ts</td>
 <td><a href="#googleprotobuftimestamp">google.protobuf.Timestamp</a></td>
-<td>Время окончания интервала.</td>
+<td>Время окончания интервала</td>
 </tr>
 <tr>
 <td><!-- end Fields --></td>
@@ -10776,42 +10725,42 @@
 <tr>
 <td>COUPON_TYPE_UNSPECIFIED</td>
 <td>0</td>
-<td>Неопределённое значение.</td>
+<td>Неопределенное значение</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_CONSTANT</td>
 <td>1</td>
-<td>Постоянный.</td>
+<td>Постоянный</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_FLOATING</td>
 <td>2</td>
-<td>Плавающий.</td>
+<td>Плавающий</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_DISCOUNT</td>
 <td>3</td>
-<td>Дисконт.</td>
+<td>Дисконт</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_MORTGAGE</td>
 <td>4</td>
-<td>Ипотечный.</td>
+<td>Ипотечный</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_FIX</td>
 <td>5</td>
-<td>Фиксированный.</td>
+<td>Фиксированный</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_VARIABLE</td>
 <td>6</td>
-<td>Переменный.</td>
+<td>Переменный</td>
 </tr>
 <tr>
 <td>COUPON_TYPE_OTHER</td>
 <td>7</td>
-<td>Прочее.</td>
+<td>Прочее</td>
 </tr>
 </tbody>
 </table>
@@ -10829,7 +10778,7 @@
 <tr>
 <td>OPTION_DIRECTION_UNSPECIFIED</td>
 <td>0</td>
-<td>Тип не определён.</td>
+<td>Тип не определен.</td>
 </tr>
 <tr>
 <td>OPTION_DIRECTION_PUT</td>
@@ -10844,7 +10793,7 @@
 </tbody>
 </table>
 <h4 id="optionpaymenttype">OptionPaymentType</h4>
-<p>Тип расчётов по опциону.</p>
+<p>Тип расчетов по опциону.</p>
 <table>
 <thead>
 <tr>
@@ -10857,12 +10806,12 @@
 <tr>
 <td>OPTION_PAYMENT_TYPE_UNSPECIFIED</td>
 <td>0</td>
-<td>Тип не определён.</td>
+<td>Тип не определен.</td>
 </tr>
 <tr>
 <td>OPTION_PAYMENT_TYPE_PREMIUM</td>
 <td>1</td>
-<td>Опционы с использованием премии в расчётах.</td>
+<td>Опционы с использованием премии в расчетах.</td>
 </tr>
 <tr>
 <td>OPTION_PAYMENT_TYPE_MARGINAL</td>
@@ -10885,7 +10834,7 @@
 <tr>
 <td>OPTION_STYLE_UNSPECIFIED</td>
 <td>0</td>
-<td>Тип не определён.</td>
+<td>Тип не определен.</td>
 </tr>
 <tr>
 <td>OPTION_STYLE_AMERICAN</td>
@@ -10913,7 +10862,7 @@
 <tr>
 <td>OPTION_EXECUTION_TYPE_UNSPECIFIED</td>
 <td>0</td>
-<td>Тип не определён.</td>
+<td>Тип не определен.</td>
 </tr>
 <tr>
 <td>OPTION_EXECUTION_TYPE_PHYSICAL_DELIVERY</td>
@@ -10923,12 +10872,12 @@
 <tr>
 <td>OPTION_EXECUTION_TYPE_CASH_SETTLEMENT</td>
 <td>2</td>
-<td>Расчётный тип опциона.</td>
+<td>Расчетный тип опциона.</td>
 </tr>
 </tbody>
 </table>
 <h4 id="instrumentidtype">InstrumentIdType</h4>
-<p>Тип идентификатора инструмента. <a href="https://russianinvestments.github.io/investAPI/faq_identification/">Подробнее об идентификации инструментов</a>.</p>
+<p>Тип идентификатора инструмента. Подробнее об идентификации инструментов: <a href="https://russianinvestments.github.io/investAPI/faq_identification/">Идентификация инструментов</a></p>
 <table>
 <thead>
 <tr>
@@ -10946,7 +10895,7 @@
 <tr>
 <td>INSTRUMENT_ID_TYPE_FIGI</td>
 <td>1</td>
-<td>FIGI.</td>
+<td>Figi.</td>
 </tr>
 <tr>
 <td>INSTRUMENT_ID_TYPE_TICKER</td>
@@ -10984,7 +10933,7 @@
 <tr>
 <td>INSTRUMENT_STATUS_BASE</td>
 <td>1</td>
-<td>Базовый список инструментов (по умолчанию). Инструменты, доступные для торговли через Tinkoff Invest API. Cейчас списки бумаг, которые доступны из API и других интерфейсах совпадают — кроме внебиржевых бумаг. Но в будущем возможны ситуации, когда списки инструментов будут отличаться.</td>
+<td>Базовый список инструментов (по умолчанию). Инструменты доступные для торговли через TINKOFF INVEST API. Cейчас списки бумаг, доступных из api и других интерфейсах совпадают (за исключением внебиржевых бумаг), но в будущем возможны ситуации, когда списки инструментов будут отличаться</td>
 </tr>
 <tr>
 <td>INSTRUMENT_STATUS_ALL</td>
@@ -11012,42 +10961,42 @@
 <tr>
 <td>SHARE_TYPE_COMMON</td>
 <td>1</td>
-<td>Обыкновенная.</td>
+<td>Обыкновенная</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_PREFERRED</td>
 <td>2</td>
-<td>Привилегированная.</td>
+<td>Привилегированная</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_ADR</td>
 <td>3</td>
-<td>Американские депозитарные расписки.</td>
+<td>Американские депозитарные расписки</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_GDR</td>
 <td>4</td>
-<td>Глобальные депозитарные расписки.</td>
+<td>Глобальные депозитарные расписки</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_MLP</td>
 <td>5</td>
-<td>Товарищество с ограниченной ответственностью.</td>
+<td>Товарищество с ограниченной ответственностью</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_NY_REG_SHRS</td>
 <td>6</td>
-<td>Акции из реестра Нью-Йорка.</td>
+<td>Акции из реестра Нью-Йорка</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_CLOSED_END_FUND</td>
 <td>7</td>
-<td>Закрытый инвестиционный фонд.</td>
+<td>Закрытый инвестиционный фонд</td>
 </tr>
 <tr>
 <td>SHARE_TYPE_REIT</td>
 <td>8</td>
-<td>Траст недвижимости.</td>
+<td>Траст недвижимости</td>
 </tr>
 </tbody>
 </table>
@@ -11191,22 +11140,22 @@
 <tr>
 <td>RECOMMENDATION_UNSPECIFIED</td>
 <td>0</td>
-<td>Не определено.</td>
+<td>Не определено</td>
 </tr>
 <tr>
 <td>RECOMMENDATION_BUY</td>
 <td>1</td>
-<td>Покупать.</td>
+<td>Покупать</td>
 </tr>
 <tr>
 <td>RECOMMENDATION_HOLD</td>
 <td>2</td>
-<td>Держать.</td>
+<td>Держать</td>
 </tr>
 <tr>
 <td>RECOMMENDATION_SELL</td>
 <td>3</td>
-<td>Продавать.</td>
+<td>Продавать</td>
 </tr>
 </tbody>
 </table>
@@ -11224,67 +11173,22 @@
 <tr>
 <td>RISK_LEVEL_UNSPECIFIED</td>
 <td>0</td>
-<td>Не указан.</td>
+<td>не указан</td>
 </tr>
 <tr>
 <td>RISK_LEVEL_LOW</td>
 <td>1</td>
-<td>Низкий уровень риска.</td>
+<td>Низкий уровень риска</td>
 </tr>
 <tr>
 <td>RISK_LEVEL_MODERATE</td>
 <td>2</td>
-<td>Средний уровень риска.</td>
+<td>Средний уровень риска</td>
 </tr>
 <tr>
 <td>RISK_LEVEL_HIGH</td>
 <td>3</td>
-<td>Высокий уровень риска.</td>
-</tr>
-</tbody>
-</table>
-<h4 id="bondtype">BondType</h4>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Number</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BOND_TYPE_UNSPECIFIED</td>
-<td>0</td>
-<td>Тип облигации не определён.</td>
-</tr>
-<tr>
-<td>BOND_TYPE_REPLACED</td>
-<td>1</td>
-<td>Замещающая облигация.</td>
-</tr>
-</tbody>
-</table>
-<h4 id="instrumentexchangetype">InstrumentExchangeType</h4>
-<p>Площадка торговли.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Number</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>INSTRUMENT_EXCHANGE_UNSPECIFIED</td>
-<td>0</td>
-<td>Площадка торговли не определена.</td>
-</tr>
-<tr>
-<td>INSTRUMENT_EXCHANGE_DEALER</td>
-<td>1</td>
-<td>Бумага, торгуемая у дилера.</td>
+<td>Высокий уровень риска</td>
 </tr>
 </tbody>
 </table>
@@ -11301,27 +11205,27 @@
 <tr>
 <td>EVENT_TYPE_UNSPECIFIED</td>
 <td>0</td>
-<td>Неопределённое значение.</td>
+<td>Неопределенное значение</td>
 </tr>
 <tr>
 <td>EVENT_TYPE_CPN</td>
 <td>1</td>
-<td>Купон.</td>
+<td>Купон</td>
 </tr>
 <tr>
 <td>EVENT_TYPE_CALL</td>
 <td>2</td>
-<td>Опцион (оферта).</td>
+<td>Опцион (оферта)</td>
 </tr>
 <tr>
 <td>EVENT_TYPE_MTY</td>
 <td>3</td>
-<td>Погашение.</td>
+<td>Погашение</td>
 </tr>
 <tr>
 <td>EVENT_TYPE_CONV</td>
 <td>4</td>
-<td>Конвертация.</td>
+<td>Конвертация</td>
 </tr>
 </tbody>
 </table>
@@ -11338,22 +11242,22 @@
 <tr>
 <td>PERIOD_TYPE_UNSPECIFIED</td>
 <td>0</td>
-<td>Не указан.</td>
+<td>не указан</td>
 </tr>
 <tr>
 <td>PERIOD_TYPE_QUARTER</td>
 <td>1</td>
-<td>Квартальный.</td>
+<td>Квартальный</td>
 </tr>
 <tr>
 <td>PERIOD_TYPE_SEMIANNUAL</td>
 <td>2</td>
-<td>Полугодовой.</td>
+<td>Полугодовой</td>
 </tr>
 <tr>
 <td>PERIOD_TYPE_ANNUAL</td>
 <td>3</td>
-<td>Годовой.</td>
+<td>Годовой</td>
 </tr>
 </tbody>
 </table>
