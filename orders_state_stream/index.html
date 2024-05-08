@@ -2531,7 +2531,7 @@
 </table>
 <blockquote>
 <p><strong>Важно</strong><br>
-Если не передавать подходящий <code>TimeInForceType</code>, в сообщениях стрима не будет заполнен <code>order_request_id</code>. Однозначно связать выставленное поручение не получится.</p>
+Если не передавать подходящий <code>TimeInForceType</code>, <code>order_request_id</code> не вернётся в сообщениях стрима. Однозначно связать выставленное поручение не получится.</p>
 </blockquote>
 <h3 id="uid">Ключ идемпотентности в формате UID</h3>
 <p><code>order_request_id</code> в сообщениях стрима передаётся только формате UID. Если в <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a> передать значение в другом формате, оно будет подменено в сообщениях стрима на сгенерированный API UID. Однозначно связать выставленное поручение не получится.</p>
