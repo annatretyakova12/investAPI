@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../operations/">
+        <link rel="prev" href="../table_order_currency/">
       
       
-        <link rel="next" href="../operations_problems/">
+        <link rel="next" href="../head-operations/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>FAQ - Tinkoff Invest API</title>
+        <title>Стрим заявок - Tinkoff Invest API</title>
       
     
     
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FAQ
+              Стрим заявок
             
           </span>
         </div>
@@ -1477,17 +1477,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -1501,7 +1503,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             Заявки
@@ -1596,10 +1598,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../orders_state_stream/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Стрим заявок
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1608,6 +1628,117 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      О стриме
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Особенности работы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Особенности работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timeinforcetype" class="md-nav__link">
+    <span class="md-ellipsis">
+      TimeInForceType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ключ идемпотентности в формате UID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Резюме
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replaceorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReplaceOrder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сообщения стрима
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Сообщения стрима">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Статусы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Состав сообщений
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1625,19 +1756,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
         
           
           <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
@@ -1651,7 +1780,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_4">
             <span class="md-nav__icon md-icon"></span>
             Операции
@@ -1704,28 +1833,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    FAQ
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../faq_operations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1734,204 +1845,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Можно ли узнать идентификатор поручения из операции?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#figi" class="md-nav__link">
-    <span class="md-ellipsis">
-      Почему в операции пустой Figi?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Будут ли отображаться операции по бумагам, которые прошли делистинг?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Параметр quantity в лотах или количествах?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tinkoff-invest-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как с помощью TINKOFF INVEST API получить брокерский отчёт?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как получить информацию о позициях и доходности портфеля?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как получить информацию об операциях?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как понять какие бумаги в портфеле заблокированы по решению ЦБ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsblocked-positionsblocked_lots-getportfolio" class="md-nav__link">
-    <span class="md-ellipsis">
-      В чем различие между параметрами positions.blocked и positions.blocked_lots в методе getPortfolio?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsexpectedyield-getportfolio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Что за значения приходят в positions.expectedYield в методе getPortfolio?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Можно ли узнать идентификатор поручения из операции? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#figi_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Почему в операции пустой Figi? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Будут ли отображаться операции по бумагам, которые прошли делистинг? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quantity_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Параметр quantity в лотах или количествах? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tinkoff-invest-api_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как с помощью TINKOFF INVEST API получить брокерский отчёт? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как получить информацию о позициях и доходности портфеля?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как получить информацию об операциях?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как понять какие бумаги в портфеле заблокированы по решению ЦБ? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsblocked-positionsblocked_lots-getportfolio_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      В чем различие между параметрами positions.blocked и positions.blocked_lots в методе getPortfolio? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsexpectedyield-getportfolio_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Что за значения приходят в positions.expectedYield в методе getPortfolio?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2485,16 +2398,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Можно ли узнать идентификатор поручения из операции?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#figi" class="md-nav__link">
-    <span class="md-ellipsis">
-      Почему в операции пустой Figi?
+      О стриме
     </span>
   </a>
   
@@ -2503,34 +2407,49 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Будут ли отображаться операции по бумагам, которые прошли делистинг?
+      Особенности работы
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quantity" class="md-nav__link">
+    <nav class="md-nav" aria-label="Особенности работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timeinforcetype" class="md-nav__link">
     <span class="md-ellipsis">
-      Параметр quantity в лотах или количествах?
+      TimeInForceType
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tinkoff-invest-api" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#uid" class="md-nav__link">
     <span class="md-ellipsis">
-      Как с помощью TINKOFF INVEST API получить брокерский отчёт?
+      Ключ идемпотентности в формате UID
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Как получить информацию о позициях и доходности портфеля?
+      Резюме
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replaceorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReplaceOrder
     </span>
   </a>
   
@@ -2539,126 +2458,33 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Как получить информацию об операциях?
+      Сообщения стрима
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Сообщения стрима">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Как понять какие бумаги в портфеле заблокированы по решению ЦБ?
+      Статусы
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsblocked-positionsblocked_lots-getportfolio" class="md-nav__link">
-    <span class="md-ellipsis">
-      В чем различие между параметрами positions.blocked и positions.blocked_lots в методе getPortfolio?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsexpectedyield-getportfolio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Что за значения приходят в positions.expectedYield в методе getPortfolio?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      Можно ли узнать идентификатор поручения из операции? 
+      Состав сообщений
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#figi_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Почему в операции пустой Figi? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Будут ли отображаться операции по бумагам, которые прошли делистинг? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quantity_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Параметр quantity в лотах или количествах? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tinkoff-invest-api_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как с помощью TINKOFF INVEST API получить брокерский отчёт? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как получить информацию о позициях и доходности портфеля?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как получить информацию об операциях?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как понять какие бумаги в портфеле заблокированы по решению ЦБ? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsblocked-positionsblocked_lots-getportfolio_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      В чем различие между параметрами positions.blocked и positions.blocked_lots в методе getPortfolio? 
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#positionsexpectedyield-getportfolio_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Что за значения приходят в positions.expectedYield в методе getPortfolio?
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2680,55 +2506,112 @@
   
 
 
-  <h1>FAQ</h1>
+  <h1>Стрим заявок</h1>
 
-<h4 id="_1"><a href="#3.1">Можно ли узнать идентификатор поручения из операции? </a></h4>
-<h4 id="figi"><a href="#3.2">Почему в операции пустой Figi?</a></h4>
-<h4 id="_2"><a href="#3.3">Будут ли отображаться операции по бумагам, которые прошли делистинг?</a></h4>
-<h4 id="quantity"><a href="#3.4">Параметр quantity в лотах или количествах?</a></h4>
-<h4 id="tinkoff-invest-api"><a href="#3.5">Как с помощью TINKOFF INVEST API получить брокерский отчёт?</a></h4>
-<h4 id="_3"><a href="#3.6">Как получить информацию о позициях и доходности портфеля?</a></h4>
-<h4 id="_4"><a href="#3.7">Как получить информацию об операциях?</a></h4>
-<h4 id="_5"><a href="#3.8">Как понять какие бумаги в портфеле заблокированы по решению ЦБ?</a></h4>
-<h4 id="positionsblocked-positionsblocked_lots-getportfolio"><a href="#3.9">В чем различие между параметрами positions.blocked и positions.blocked_lots в методе getPortfolio?</a></h4>
-<h4 id="positionsexpectedyield-getportfolio"><a href="#3.10">Что за значения приходят в positions.expectedYield в методе getPortfolio?</a></h4>
-<h3 id="_6">Можно ли узнать идентификатор поручения из операции? <a id="3.1"></a></h3>
-<p>Нет, в данный момент такой информации в операции нет, но мы работаем над этим. </p>
-<h3 id="figi_1">Почему в операции пустой Figi? <a id="3.2"></a></h3>
-<p>Такое возможно для операций внесения денежных средств и подобных, т.к. нет связанного с операцией биржевого
-инструмента</p>
-<h3 id="_7">Будут ли отображаться операции по бумагам, которые прошли делистинг? <a id="3.3"></a></h3>
-<p>Да, такие операции отображаться будут. В том числе будут отображаться операции по бумагам после
-различных корпоративных действий. Подробнее: <a href="/investAPI/faq_corp_action/">Корпоративные действия</a>.</p>
-<h3 id="quantity_1">Параметр quantity в лотах или количествах? <a id="3.4"></a></h3>
-<p>В рамках сервиса операций данный параметр всегда передаётся в лотах инструмента.</p>
-<h3 id="tinkoff-invest-api_1">Как с помощью TINKOFF INVEST API получить брокерский отчёт? <a id="3.5"></a></h3>
-<p>Для получения брокерского отчёта можно воспользоваться методом <a href="/investAPI/operations#getbrokerreport">GetBrokerReport</a>.
-Обратите внимание, что получение брокерского отчёта асинхронно, т.е. сперва вы запрашиваете формирование
-отчёта (отправляя пакет <a href="/investAPI/operations#generatebrokerreportrequest">generate_broker_report_request</a>),
-получаете идентификатор задачи формирования отчёта (параметр task_id). После этого вы можете запросить 
-отчёт по его идентификатору, в случае если формирование отчёта ещё не закончено, вы получите соответствующее
-сообщение об ошибке.</p>
-<p>Подробнее о брокерском отчёте: <a href="https://www.tinkoff.ru/invest/account/help/trade-on-bs/get-report/">Отчёты и справки</a>.</p>
-<h3 id="_8">Как получить информацию о позициях и доходности портфеля?<a id="3.6"></a></h3>
-<p>Для получения информации о позиция и доходности портфеля необходимо подписаться на на метод <a href="/investAPI/operations/#portfoliostream">PortfolioStream</a> или выполнить запросы в <a href="/investAPI/operations/#getportfolio">метод получения портфеля</a> и <a href="/investAPI/operations/#getpositions">метод получения позиций по счету</a>.
-В <a href="/investAPI/operations/#portfoliostream">PortfolioStream</a> не отображаются заблокированные биржей бумаги. 
-Получить заблокированные бумаги можно в методе <a href="/investAPI/operations/#getportfolio">GetPortfolio</a> и <a href="/investAPI/operations/#getpositions">GetPossitions</a>.</p>
-<h3 id="_9">Как получить информацию об операциях?<a id="3.7"></a></h3>
-<p>Для получения информации об операциях в TINKOFF INVEST API предусмотрен метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.
-Данный метод имеет широкие возможности фильтрации, а также возвращает постраничную информацию об операциях.
-Для вызова метода во входных параметрах достаточно указать только <strong><code>account_id</code></strong>.</p>
-<p>Также в TINKOFF INVEST API для получения списка операций существует метод <a href="/investAPI/operations#getoperations">getOperations</a>, являющийся более старой версией метода <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a>.
-Однако, метод <a href="/investAPI/operations#getoperationsbycursor">getOperationsByCursor</a> является более <strong>предпочтительным</strong> для использования.
-Для вызова метода <a href="/investAPI/operations#getoperations">getOperations</a> во входных параметрах достаточно указать только <strong><code>account_id</code></strong>.</p>
-<p><strong>Важно!!!</strong> Метод <a href="/investAPI/operations#getoperations">getOperations</a> возвращает только последнюю тысячу операций.</p>
-<h3 id="_10">Как понять какие бумаги в портфеле заблокированы по решению ЦБ? <a id="3.8"></a></h3>
-<p>В методах <a href="/investAPI/operations#getportfolio">getPortfolio</a> и  <a href="/investAPI/operations#getpositions">getPositions</a> добавлены специальные булевы параметры, означающие, что данный инструмент заблокирован депозитарием.</p>
-<h3 id="positionsblocked-positionsblocked_lots-getportfolio_1">В чем различие между параметрами positions.blocked и positions.blocked_lots в методе <a href="/investAPI/operations#getportfolio">getPortfolio</a>? <a id="3.9"></a></h3>
-<p>При выставлении лимитных заявок блокируется выставленное количество бумаг на счет, это количество и является значением параметра positions.blocked_lots. Параметр positions.blocked, булевый параметр, значение которого отображает заблокирован ли инструмент депозитарием.</p>
-<h3 id="positionsexpectedyield-getportfolio_1">Что за значения приходят в positions.expectedYield в методе <a href="/investAPI/operations#getportfolio">getPortfolio</a>?<a id="3.10"></a></h3>
-<p>В методе <a href="/investAPI/operations#getportfolio">getPortfolio</a> в параметрах positions.expectedYield и positions.expectedYieldFifo
-возвращается значение текущей рассчитанной доходность позиции - это значение в валюте инструмента.</p>
+<p>Стрим-соединение Tinkoff Invest API для получения изменений состояния заявок.</p>
+<h2 id="_1">О стриме</h2>
+<p>Стрим используется для получения событий по заявкам с момента выставления до момента исполнения или отмены. 
+Переход заявки от одного статуса в другой формирует событие в стриме.</p>
+<p><a href="/investAPI/head-orders/#_2">Статусная модель заявок</a> </p>
+<p>В статусе <code>PARTYALLY_FILL</code> события формируются по мере исполнения заявки.</p>
+<h2 id="_2">Особенности работы</h2>
+<p>В методе передаются все заявки по счёту из подписки, но не всегда можно связать заявку в стриме с поручением, которое отправлено через метод <code>PostOrder</code>.</p>
+<p>Заявки, которые транслируются в стриме, можно идентифицировать по <code>order_request_id</code> — <a href="/investAPI/head-orders/#_6">ключу идемпотентности</a>. Он передаётся при <a href="/investAPI/orders/#postorder">выставлении заявки</a>.</p>
+<p>Чтобы поддержать клиентский идентификатор в стриме:</p>
+<ul>
+<li>заявка должна содержать явно заданный <a href="/investAPI/orders/#timeinforcetype">алгоритм исполнения</a>;</li>
+<li><a href="/investAPI/faq_orders/#order_id-postorder_1">ключ идемпотентности</a> должен быть передан в формате UID.</li>
+</ul>
+<h3 id="timeinforcetype">TimeInForceType</h3>
+<p>Для идентификации заявки в стриме по ключу идемпотентности нужно явно указать алгоритм исполнения поручения в <code>PostOrderRequest</code>.</p>
+<p>Подходящие под условия варианты исполнения в зависимости от <a href="/investAPI/orders/#ordertype">типа заявки</a>:</p>
+<table>
+<thead>
+<tr>
+<th>OrderType</th>
+<th>TimeInForceType</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ORDER_TYPE_LIMIT</code></td>
+<td>Один из алгоритмов: </br> <code>TIME_IN_FORCE_DAY</code> </br> <code>TIME_IN_FORCE_FILL_AND_KILL</code> </br> <code>TIME_IN_FORCE_FILL_OR_KILL</code> </br></td>
+</tr>
+<tr>
+<td><code>ORDER_TYPE_MARKET</code></td>
+<td><code>TIME_IN_FORCE_DAY</code></td>
+</tr>
+<tr>
+<td><code>ORDER_TYPE_BESTPRICE</code></td>
+<td>Указывать алгоритм исполнения не нужно, все bestprice-заявки маршрутизируются в стрим с ключом идемпотентности.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Важно</strong><br>
+Если не передавать подходящий <code>TimeInForceType</code>, в сообщениях стрима не будет заполнен <code>order_request_id</code>. Однозначно связать выставленное поручение не получится.</p>
+</blockquote>
+<h3 id="uid">Ключ идемпотентности в формате UID</h3>
+<p><code>order_request_id</code> в сообщениях стрима передаётся только формате UID. Если в запросе <a href="/investAPI/orders/#postorderrequest">PostOrderRequest</a> передать значение в другом формате, оно будет подменено в сообщениях стрима на сгенерированный API UID. Однозначно связать выставленное поручение не получится.</p>
+<h3 id="_3">Резюме</h3>
+<p>В таблице привели возможные ответы стрима в зависимости от параметов, переданных в <code>PostOrderRequest</code>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Ключ идемпотентности </br> не передан</th>
+<th>Ключ идемпотентности </br> передан не в UID</th>
+<th>Ключ идемпотентности </br> передан в UID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Тип исполнения не передан</strong>  </br> <strong>или не соответствует типу заявки</strong></td>
+<td><code>order_request_id</code> </br> отсутствует в сообщениях</td>
+<td><code>order_request_id</code> </br> отсутствует в сообщениях</td>
+<td><code>order_request_id</code> </br> отсутствует в сообщениях</td>
+</tr>
+<tr>
+<td><strong>Тип исполнения передан</strong> </br> <strong>и соответствует типу заявки</strong></td>
+<td>в сообщениях <code>order_request_id</code> </br> сгенерированный API</td>
+<td>в сообщениях <code>order_request_id</code> </br> сгенерированный API</td>
+<td><strong>в сообщениях order_request_id </br> из PostOrder</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Ключ идемпотентности</th>
+<th>Тип исполнения</th>
+<th>order_request_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Не передан</td>
+<td>Не передан или не соответствует типу заявки</td>
+<td><code>order_request_id</code> нет в сообщениях</td>
+</tr>
+<tr>
+<td>Передан не в UID</td>
+<td>Не передан или не соответствует типу заявки</td>
+<td><code>order_request_id</code> нет в сообщениях</td>
+</tr>
+<tr>
+<td>Передан в UID</td>
+<td>Не передан или не соответствует типу заявки</td>
+<td><code>order_request_id</code> нет в сообщениях</td>
+</tr>
+</tbody>
+</table>
+<h2 id="replaceorder">ReplaceOrder</h2>
+<p>Методом <a href="/investAPI/orders/#replaceorderrequest">изменения выставленной заявки</a> пока не поддерживается новая маршрутизация. Будет доработано в ближайшее время.</p>
+<h2 id="_4">Сообщения стрима</h2>
+<h3 id="_5">Статусы</h3>
+<p>Первое сообщение по поручению в стриме соответствует получению заявки брокером. На этом этапе еще не определен биржевой номер заявки, в <code>order_id</code> передается внутренний номер.</p>
+<h3 id="_6">Состав сообщений</h3>
+<p>Некоторые параметры ответа, такие, как список сделок и маркер, опциональные и ориентированы на будущее развитие метода.</p>
 
 
 
