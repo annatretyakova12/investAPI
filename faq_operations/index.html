@@ -1778,7 +1778,7 @@
         <li class="md-nav__item">
   <a href="#quantity" class="md-nav__link">
     <span class="md-ellipsis">
-      Параметр quantity в лотах или количествах?
+      Параметр quantity передаётся в лотах или количествах?
     </span>
   </a>
   
@@ -2422,7 +2422,7 @@
         <li class="md-nav__item">
   <a href="#quantity" class="md-nav__link">
     <span class="md-ellipsis">
-      Параметр quantity в лотах или количествах?
+      Параметр quantity передаётся в лотах или количествах?
     </span>
   </a>
   
@@ -2509,7 +2509,7 @@
 инструмента.</p>
 <h3 id="_2">Будут ли отображаться операции по бумагам, которые прошли делистинг?</h3>
 <p>Да. Также операции по бумагам будут отображаться после различных <a href="/investAPI/faq_corp_action/">корпоративных действий</a>.</p>
-<h3 id="quantity">Параметр <code>quantity</code> в лотах или количествах?</h3>
+<h3 id="quantity">Параметр <code>quantity</code> передаётся в лотах или количествах?</h3>
 <p>В рамках сервиса операций параметр <code>quantity</code> всегда передаётся в лотах инструмента.</p>
 <h3 id="tinkoff-invest-api">Как с помощью Tinkoff Invest API получить брокерский отчёт?</h3>
 <p>Можно воспользоваться методом <a href="/investAPI/operations#getbrokerreport">GetBrokerReport</a>.</p>
@@ -2537,7 +2537,7 @@
 <p>В методах <a href="/investAPI/operations#getportfolio">getPortfolio</a> и <a href="/investAPI/operations#getpositions">getPositions</a> есть специальные булевы параметры <code>exchange_blocked</code> и <code>blocked</code>. Они принимают значение <code>true</code>, если инструмент заблокирован депозитарием.</p>
 <h3 id="positionsblocked-positionsblocked_lots-getportfolio">В чем различие между параметрами <code>positions.blocked</code> и <code>positions.blocked_lots</code> в методе <a href="/investAPI/operations#getportfolio">getPortfolio</a>?</h3>
 <ul>
-<li><code>positions.blocked_lots</code> — при выставлении лимитных заявок блокируется выставленное количество бумаг на счёт. Параметр отображает это количество. </li>
+<li><code>positions.blocked_lots</code> — количество заблокированных бумаг на счёте. Используется при выставлении лимитных заявок. </li>
 <li><code>positions.blocked</code> — булевый параметр. Отображает, заблокирован ли инструмент депозитарием.</li>
 </ul>
 <h3 id="positionsexpectedyield-getportfolio">Что за значения приходят в <code>positions.expectedYield</code> в методе <a href="/investAPI/operations#getportfolio">getPortfolio</a>?</h3>
