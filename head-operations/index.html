@@ -1717,25 +1717,10 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Получить список операций по счёту">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Особенности методов списка операций
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Получить портфолио
     </span>
@@ -1744,7 +1729,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Получить список позиций портфеля по счёту
     </span>
@@ -1753,7 +1738,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Получить доступный остаток для вывода денежных средств
     </span>
@@ -1762,7 +1747,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Получить отчёты
     </span>
@@ -1771,7 +1756,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Стрим позиций и доходности портфеля
     </span>
@@ -1780,7 +1765,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       Стрим изменения позиций портфеля
     </span>
@@ -1790,7 +1775,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       Получить торговые статусы инструментов и расписание торгов
     </span>
@@ -2408,25 +2393,10 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Получить список операций по счёту">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Особенности методов списка операций
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Получить портфолио
     </span>
@@ -2435,7 +2405,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Получить список позиций портфеля по счёту
     </span>
@@ -2444,7 +2414,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Получить доступный остаток для вывода денежных средств
     </span>
@@ -2453,7 +2423,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Получить отчёты
     </span>
@@ -2462,7 +2432,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Стрим позиций и доходности портфеля
     </span>
@@ -2471,7 +2441,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       Стрим изменения позиций портфеля
     </span>
@@ -2481,7 +2451,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       Получить торговые статусы инструментов и расписание торгов
     </span>
@@ -2537,12 +2507,8 @@
 статусов торговых поручений — некоторые операции могут приходить с задержкой относительно реального
 исполнения. </p>
 <p>Для получения статусов исполнения торговых поручений рекомендуем использовать <a href="/investAPI/head-orders/#_7">стрим</a> сервиса работы с торговыми поручениями. </p>
-<h3 id="_3">Особенности методов списка операций</h3>
-<ol>
-<li>ID операций могут меняться со временем. Не стоит ориентироваться на ID операций как на первичный ключ. Если вам нужно перезагрузить историю операций, удалите старые ID операции при повторном запросе операции.</li>
-<li>По инструментам, прошедшим корпоративные действия, история операций может быть не полной — как в API, так и в мобильном приложении. Чтобы получить точную информацию, используйте <a href="/investAPI/operations/#getbrokerreport">брокерский отчёт</a>.</li>
-</ol>
-<h2 id="_4">Получить портфолио</h2>
+<p><a href="/investAPI/operations_problems">Особенности методов списка операций</a></p>
+<h2 id="_3">Получить портфолио</h2>
 <p>Чтобы торговый робот получал текущее состояние портфеля по счёту, используйте метод <a href="/investAPI/operations#getportfolio">getPortfolio</a>.</p>
 <p>Отличие метода от <a href="/investAPI/operations#getpositions">getPositions</a> в том, что он
 возвращает статистическую информацию по портфелю — абсолютные и относительные доходности, текущую 
@@ -2568,7 +2534,7 @@
 </ul>
 
 <p><a href="https://www.tinkoff.ru/help/invest-educate/yield-analysis/about/math-method/">Подробнее о методах расчёта с примерами</a></p>
-<h2 id="_5">Получить список позиций портфеля по счёту</h2>
+<h2 id="_4">Получить список позиций портфеля по счёту</h2>
 <p>Для принятия решений торговому роботу нужно получать список актуальных позиций в портфеле — то есть 
 количество ценных бумаг и валютных позиций по счёту, включая заблокированные средства. </p>
 <p>Для этого мы рекомендуем использовать метод <a href="/investAPI/operations#getpositions">getPositions</a>. Он является более быстрым и «лёгким» по сравнению с методом получения портфолио.  </p>
@@ -2583,17 +2549,17 @@
 Метод не возвращает объём средств, заблокированных под гарантийное обеспечение фьючерсов. Для 
 получения этой информации используйте метод <a href="/investAPI/operations#getwithdrawlimits">getWithdrawLimits</a>. </p>
 </blockquote>
-<h2 id="_6">Получить доступный остаток для вывода денежных средств</h2>
+<h2 id="_5">Получить доступный остаток для вывода денежных средств</h2>
 <p>Для этого используйте метод <a href="/investAPI/operations#getwithdrawlimits">getWithdrawLimits</a> — через него можно получить доступный баланс денежных средств для вывода и количество заблокированных 
 валютных позиций. </p>
-<h2 id="_7">Получить отчёты</h2>
+<h2 id="_6">Получить отчёты</h2>
 <p>В Tinkoff Invest API можно получать различные отчёты. Например, <a href="/investAPI/operations#getbrokerreport">брокерский отчёт</a> или <a href="/investAPI/operations#getdivIDendsforeignissuer">справку о доходах за пределами РФ</a>. </p>
 <blockquote>
 <p><strong>Обратите внимание</strong><br>
 Операции формирования отчётов трудоёмкие, поэтому есть ограничения на период формирования отчёта и лимиты на количество вызовов методов. </p>
 </blockquote>
 <p>Запрос справки о доходах за пределами РФ работает корректно, если верхний интервал запрашиваемых дат не позднее, чем 2 рабочих дня от текущей даты.</p>
-<h2 id="_8">Стрим позиций и доходности портфеля</h2>
+<h2 id="_7">Стрим позиций и доходности портфеля</h2>
 <p>Чтобы получать информацию об изменении портфеля по факту совершения сделок, можно подписаться на gRPC server-sIDe stream <a href="/investAPI/operations/#portfoliostream">PortfolioStream</a>.</p>
 <p>Стрим позиций и доходностей портфеля возвращает статистическую информацию по портфелю — абсолютные и относительные доходности, текущую стоимость активов и другие.</p>
 <p>В валюте инструмента возвращаются:</p>
@@ -2604,11 +2570,11 @@
 <li>средняя цена лота в позиции по методу FIFO.</li>
 </ul>
 <p>Средняя цена лота в позиции в пунктах (для фьючерсов) возвращает количество в пунктах. </p>
-<h2 id="_9">Стрим изменения позиций портфеля</h2>
+<h2 id="_8">Стрим изменения позиций портфеля</h2>
 <p><a href="/investAPI/operations/#positionsstream">PositionsStream</a> — gRPC server-sIDe stream, который предназначен для получения информации по изменению позиций портфеля.</p>
 <p>В качестве входного необязательного параметра стрим принимает массив идентификаторов счетов, по которым вы хотите получать изменения позиций.</p>
 <p>В качестве сообщений стрима приходят изменения позиций, объекты <code>money, securities, futures, options</code> и дата и время операции, изменившие позицию. </p>
-<h3 id="_10">Получить торговые статусы инструментов и расписание торгов</h3>
+<h3 id="_9">Получить торговые статусы инструментов и расписание торгов</h3>
 <p><a href="https://russianinvestments.github.io/investAPI/faq_trading_status/">Торговые статусы инструментов и расписание торгов</a></p>
 <p>Также рекомендуем смотреть актуальную информацию по режимам и статусам торгов на сайтах <a href="https://www.moex.com/">Московской биржи</a> и <a href="https://spbexchange.ru/">СПБ биржи</a>. </p>
 
