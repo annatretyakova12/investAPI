@@ -2655,21 +2655,19 @@
 <p><a href="/investAPI/faq_identification/">Подробнее об идентификаторах инструментов</a></p>
 <p>Есть несколько вариантов взаимодействия с сервисом: </p>
 <ol>
-<li>
-<p><strong>Unary-методы</strong> — используются, когда не требуется оперативность получения информации или для загрузки исторических данных. Для методов есть ограничение на <a href="/investAPI/limits">количество запросов в минуту</a>.</p>
+<li><p><strong>Unary-методы</strong> — используются, когда не требуется оперативность получения информации или для загрузки исторических данных. Для методов есть ограничение на <a href="/investAPI/limits">количество запросов в минуту</a>.</p>
 </li>
-<li>
-<p><strong>Bidirectional stream</strong> — используется для получения биржевой информации в реальном времени с минимально 
+<li><p><strong>Bidirectional stream</strong> — используется для получения биржевой информации в реальном времени с минимально 
 возможными задержками. Для работы со стримом есть <a href="/investAPI/limits">лимитные ограничения</a>.</p>
-</li>
-</ol>
 <p>Также в стриме есть метод для <a href="/investAPI/head-marketdata/#_14">контроля консистентности активных подписок</a>.</p>
-<ol>
-<li><strong>Server-side stream</strong> — используется для получения биржевой информации в реальном времени с минимально
-   возможными задержками. В отличие от <a href="/investAPI/marketdata#marketdatastream">MarketDataStream</a>, в этом стриме передаётся объект со всеми типами подписок.</li>
-</ol>
+</li>
+<li><p><strong>Server-side stream</strong> — используется для получения биржевой информации в реальном времени с минимально
+возможными задержками. В отличие от <a href="/investAPI/marketdata#marketdatastream">MarketDataStream</a>, в этом стриме передаётся объект со всеми типами подписок.</p>
 <p>ServerSideStream нужен для корректной трансляции маркет-даты в браузерные клиенты по gRPC-web, который не поддерживает Bidirectional-стримы.</p>
 <p>Для работы со стримом есть <a href="/investAPI/limits">лимитные ограничения</a>.</p>
+</li>
+</ol>
+
 <blockquote>
 <p><strong>Важно</strong><br>
 Цены облигаций и фьючерсов в Tinkoff Invest API отображаются в пунктах. Для облигаций один пункт равен одному проценту номинала облигации. </p>
@@ -2687,11 +2685,9 @@
 <li><strong>lot</strong> - лотность инструмента.</li>
 </ul>
 <h3 id="_3">Акции</h3>
-<blockquote>
-<p><strong>price</strong> * <strong>lot</strong></p>
-</blockquote>
+<p>Формула расчёта: <strong>price</strong> * <strong>lot</strong>.</p>
 <h3 id="_4">Облигации</h3>
-<p>Пункты цены для котировок облигаций — это проценты номинала облигации. Формулы для пересчёта:</p>
+<p>Пункты цены для котировок облигаций — это проценты номинала облигации. Формулы расчёта:</p>
 <ul>
 <li>
 <p>Пункты в валюту: <strong>price</strong> / 100 * <strong>nominal</strong>.</p>
@@ -2702,13 +2698,13 @@
 </ul>
 <p>НКД — накопленный купонный доход. Может возвращаться в параметрах <code>current_nkd</code> или <code>aci_value</code>. </p>
 <h3 id="_5">Валюта</h3>
+<p>Формула расчёта: <strong>price</strong> * <strong>lot</strong> / <strong>nominal</strong>.</p>
 <blockquote>
-<p><strong>price</strong> * <strong>lot</strong> / <strong>nominal</strong></p>
 <p><strong>Важно</strong><br>
-При торговле валютой учитывайте, что у таких валют, как Иена, Армянский драм и Тенге <code>nominal</code> = <code>100</code>.</p>
+При торговле валютой учитывайте, что у таких валют как Иена, Армянский драм и Тенге <code>nominal</code> = <code>100</code>.</p>
 </blockquote>
 <h3 id="_6">Фьючерсы</h3>
-<p>Стоимость фьючерсов также предоставляется в пунктах. Формула для пересчёта: <strong>price</strong> / <strong>min_price_increment</strong> * <strong>min_price_increment_amount</strong>.</p>
+<p>Стоимость фьючерсов также предоставляется в пунктах. Формула расчёта: <strong>price</strong> / <strong>min_price_increment</strong> * <strong>min_price_increment_amount</strong>.</p>
 <h2 id="_7">Получить исторические свечи</h2>
 <p>В процессе разработки торгового робота нужно анализировать различную историческую информацию — например,
 свечи. Для получения исторических свечей по инструменту можно использовать метод <a href="/investAPI/marketdata#getcandles">getCandles</a>.</p>
