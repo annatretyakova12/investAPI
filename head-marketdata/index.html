@@ -1918,11 +1918,11 @@
         <li class="md-nav__item">
   <a href="#bidirectional-stream" class="md-nav__link">
     <span class="md-ellipsis">
-      Bidirectional-stream получения биржевой информации
+      Bidirectional stream получения биржевой информации
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Bidirectional-stream получения биржевой информации">
+    <nav class="md-nav" aria-label="Bidirectional stream получения биржевой информации">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2551,11 +2551,11 @@
         <li class="md-nav__item">
   <a href="#bidirectional-stream" class="md-nav__link">
     <span class="md-ellipsis">
-      Bidirectional-stream получения биржевой информации
+      Bidirectional stream получения биржевой информации
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Bidirectional-stream получения биржевой информации">
+    <nav class="md-nav" aria-label="Bidirectional stream получения биржевой информации">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2721,7 +2721,7 @@
 использовать unary-метод не всегда удобно. В таком случае рекомендуем использовать 
 <a href="/investAPI/marketdata#subscribeorderbookrequest">подписку на стаканы</a> в рамках 
 <a href="/investAPI/marketdata#marketdatastream">stream-соединения сервиса</a>.</p>
-<h2 id="bidirectional-stream">Bidirectional-stream получения биржевой информации</h2>
+<h2 id="bidirectional-stream">Bidirectional stream получения биржевой информации</h2>
 <p>В рамках stream-соединения можно получать поток интересующих данных. В рамках одного соединения пользователь
 может подписаться на получение:</p>
 <ul>
@@ -2756,7 +2756,7 @@
 Максимальное количество подписок на одно соединение ограничено <a href="/investAPI/limits/">лимитной политикой</a> Tinkoff Invest API, но это ограничение не распространяется на подписку <strong>info</strong> — получение торгового статуса инструмента.</p>
 </blockquote>
 <h3 id="_10">Особенности трансляции свечей</h3>
-<p>Свечи в рамках bidirectional-stream собираются из ленты обезличенных сделок в режиме реального времени.</p>
+<p>Свечи в рамках bidirectional stream собираются из ленты обезличенных сделок в режиме реального времени.</p>
 <p>Свечи отправляются не чаще одного раза в 300мс + свеча закрытия периода сбора. Но бывают ситуации, когда сделки с биржи фактически доходят уже после окончания периода сбора свечи — в таком случае в стрим отправляется ещё одна или более «корректирующая» свеча. </p>
 <p>Если вам нужно получать свечи после закрытия интервала, используйте параметр <code>waiting_close</code>.</p>
 <h3 id="_11">Получить исторические рыночные данные по инструментам в виде годового архива</h3>
@@ -2772,7 +2772,7 @@
 Данные в архиве обновляются раз в сутки — как правило ночью. Текущего дня в архиве не будет.</p>
 </blockquote>
 <h3 id="_12">Лимиты на количество запросов на подписку</h3>
-<p>Для всех типов подписок в <a href="/investAPI/marketdata/#marketdatastream">bidirectional-stream</a> установлены ограничения максимального количества запросов на подписку. </p>
+<p>Для всех типов подписок в <a href="/investAPI/marketdata/#marketdatastream">bidirectional stream</a> установлены ограничения максимального количества запросов на подписку. </p>
 <p>Если количество запросов за минуту превысит 100, для всех элементов будет установлен статус <a href="/investAPI/marketdata/#subscriptionstatus">SUBSCRIPTION_STATUS_TOO_MANY_REQUESTS</a>.</p>
 <h3 id="_13">Получить информацию о своих подписках</h3>
 <p>Информацию о своих подписках можно запросить через метод <a href="/investAPI/marketdata/#marketdatastream">marketDataStream</a>, передав параметр <a href="/investAPI/marketdata/#getmysubscriptions">GetMySubscriptions</a>.
@@ -2795,14 +2795,10 @@
 </li>
 </ol>
 <h3 id="_15">Получить цену закрытия</h3>
-<p>В процессе работы алгоритма торговли может потребоваться получение цены закрытия по инструменту или
-инструментам. Для реализации данной потребности следует использовать метод <a href="/investAPI/marketdata/#getcloseprices">GetClosePrices</a>.
-Используя данный метод, вы можете получить цены закрытия всех доступных для торговли инструментов — для
-этого требуется передать пустой массив <em>instruments</em>.</p>
-<p>Данный метод для всех бумаг возвращает цену закрытия за предыдущий торговый день.
-Принимает на вход <code>instrumentId</code> - параметр, в который можно передать значение <strong>instrument_uid</strong> <em>или</em> <strong>FIGI</strong>. </p>
+<p>Чтобы получить цены закрытия всех доступных для торговли инструментов, используйте  метод <a href="/investAPI/marketdata/#getcloseprices">GetClosePrices</a>. В запросе передайте пустой массив <code>instruments</code>.</p>
+<p>Чтобы получить цену закрытия за предыдущий торговый день, в <a href="/investAPI/marketdata/#instrumentclosepricerequest">запросе</a> передайте параметр <code>instrumentId</code> — идентификатор инструмента. Он принимает значение <strong>instrument_uid</strong> или <strong>FIGI</strong>. </p>
 <h3 id="_16">Торговые статусы инструментов и расписание торгов</h3>
-<p>Информацию о статусах инструментов и расписаниях торгов вы можете получить на странице <a href="https://russianinvestments.github.io/investAPI/faq_trading_status/">Торговые статусы инструментов и расписание торгов</a>.</p>
+<p><a href="https://russianinvestments.github.io/investAPI/faq_trading_status/">Торговые статусы инструментов и расписание торгов</a></p>
 <p>Также рекомендуем смотреть актуальную информацию по режимам и статусам торгов на сайтах <a href="https://www.moex.com/">Московской биржи</a> и <a href="https://spbexchange.ru/">СПБ биржи</a>. </p>
 
 
