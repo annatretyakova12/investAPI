@@ -1888,7 +1888,7 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Интерфейс загрузки исторических данных
+      Интерфейс
     </span>
   </a>
   
@@ -1897,11 +1897,11 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Метод загрузки исторических рыночных данных по инструменту
+      Метод
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Метод загрузки исторических рыночных данных по инструменту">
+    <nav class="md-nav" aria-label="Метод">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1939,11 +1939,11 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Скрипт получения исторических рыночных данных по инструментам
+      Скрипт
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Скрипт получения исторических рыночных данных по инструментам">
+    <nav class="md-nav" aria-label="Скрипт">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2414,7 +2414,7 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Интерфейс загрузки исторических данных
+      Интерфейс
     </span>
   </a>
   
@@ -2423,11 +2423,11 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Метод загрузки исторических рыночных данных по инструменту
+      Метод
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Метод загрузки исторических рыночных данных по инструменту">
+    <nav class="md-nav" aria-label="Метод">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2465,11 +2465,11 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Скрипт получения исторических рыночных данных по инструментам
+      Скрипт
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Скрипт получения исторических рыночных данных по инструментам">
+    <nav class="md-nav" aria-label="Скрипт">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2524,11 +2524,11 @@
 <p>В Tinkoff Invest API можно получить исторические рыночные данные по
 инструментам за год в виде архива минутных свечей. </p>
 <p>Для загрузки истории котировок можно воспользоваться интерфейсом, специальным методом или подготовленными <a href="https://github.com/RussianInvestments/investAPI/tree/main/src/marketdata">скриптом и справочником FIGI</a>.</p>
-<h3 id="_2">Интерфейс загрузки исторических данных</h3>
+<h3 id="_2">Интерфейс</h3>
 <p><a href="https://russianinvestments.github.io/invest-history-index-ui/#/">Интерфейс получения истории по инструменту </a></p>
 <p>На странице есть поиск по тикеру, фильтр по типу инструмента, прямые ссылки и автоматически сгенерированный скрипт для выгрузки.</p>
 <p>Чтобы получить исторические данные, нужно ввести <a href="https://russianinvestments.github.io/investAPI/token">токен доступа</a>.</p>
-<h3 id="_3">Метод загрузки исторических рыночных данных по инструменту</h3>
+<h3 id="_3">Метод</h3>
 <p>Чтобы получить исторические рыночные данные в виде архива по определённому инструменту, отправьте GET-запрос на URL <code>https://invest-public-api.tinkoff.ru/history-data</code> с указанными ниже параметрами и Bearer-токеном.</p>
 <h4 id="gethistoryrequest">GetHistoryRequest</h4>
 <table>
@@ -2578,7 +2578,7 @@
 <pre><code>curl -X GET --location "https://invest-public-api.tinkoff.ru/history-data?figi=BBG00QKJSX05&amp;year=2022" \
 -H "Authorization: Bearer token"
 </code></pre>
-<h3 id="_5">Скрипт получения исторических рыночных данных по инструментам</h3>
+<h3 id="_5">Скрипт</h3>
 <p>Чтобы получить историю котировок за весь доступный период, можно воспользоваться специальным <a href="https://github.com/RussianInvestments/investAPI/blob/main/src/marketdata/download_md.sh">скриптом</a> и <a href="https://github.com/RussianInvestments/investAPI/blob/main/src/marketdata/figi.txt">справочником FIGI</a>.</p>
 <p>Также вы можете создать свой справочник нужных FIGI по аналогии с представленным, назвать его <code>figi.txt</code> и сохранить в той же директории, где сохраните скрипт.</p>
 <p>Перед запуском скрипта <code>download_md.sh</code> нужно добавить <a href="https://russianinvestments.github.io/investAPI/token">токен доступа</a> в параметр <code>token</code>.</p>
