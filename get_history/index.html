@@ -1878,11 +1878,11 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Загрузка исторических рыночных данных в виде архива
+      Получить исторические рыночные данные в виде архива
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Загрузка исторических рыночных данных в виде архива">
+    <nav class="md-nav" aria-label="Получить исторические рыночные данные в виде архива">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1897,11 +1897,11 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Метод загрузки исторических рыночных данных по инструменту в виде годового архива
+      Метод загрузки исторических рыночных данных по инструменту
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Метод загрузки исторических рыночных данных по инструменту в виде годового архива">
+    <nav class="md-nav" aria-label="Метод загрузки исторических рыночных данных по инструменту">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1939,11 +1939,11 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Скрипт получения исторических рыночных данных по инструментам в виде годового архива
+      Скрипт получения исторических рыночных данных по инструментам
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Скрипт получения исторических рыночных данных по инструментам в виде годового архива">
+    <nav class="md-nav" aria-label="Скрипт получения исторических рыночных данных по инструментам">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2404,11 +2404,11 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Загрузка исторических рыночных данных в виде архива
+      Получить исторические рыночные данные в виде архива
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Загрузка исторических рыночных данных в виде архива">
+    <nav class="md-nav" aria-label="Получить исторические рыночные данные в виде архива">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2423,11 +2423,11 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Метод загрузки исторических рыночных данных по инструменту в виде годового архива
+      Метод загрузки исторических рыночных данных по инструменту
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Метод загрузки исторических рыночных данных по инструменту в виде годового архива">
+    <nav class="md-nav" aria-label="Метод загрузки исторических рыночных данных по инструменту">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2465,11 +2465,11 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Скрипт получения исторических рыночных данных по инструментам в виде годового архива
+      Скрипт получения исторических рыночных данных по инструментам
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Скрипт получения исторических рыночных данных по инструментам в виде годового архива">
+    <nav class="md-nav" aria-label="Скрипт получения исторических рыночных данных по инструментам">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2520,16 +2520,16 @@
 
   <h1>Получение исторических рыночных данных</h1>
 
-<h2 id="_1">Загрузка исторических рыночных данных в виде архива</h2>
-<p>TINKOFF INVEST API предоставляет своим пользователям возможность получения исторических рыночных данных по
-инструментам за год в виде архива минутных свечей. 
-Для загрузки истории котировок можно воспользоваться интерфейсом, специальным методом или подготовленными <a href="https://github.com/RussianInvestments/investAPI/tree/main/src/marketdata">скриптом и справочником figi</a>.</p>
+<h2 id="_1">Получить исторические рыночные данные в виде архива</h2>
+<p>В Tinkoff Invest API можно получить исторические рыночные данные по
+инструментам за год в виде архива минутных свечей. </p>
+<p>Для загрузки истории котировок можно воспользоваться интерфейсом, специальным методом или подготовленными <a href="https://github.com/RussianInvestments/investAPI/tree/main/src/marketdata">скриптом и справочником FIGI</a>.</p>
 <h3 id="_2">Интерфейс загрузки исторических данных</h3>
-<p>На <a href="https://russianinvestments.github.io/invest-history-index-ui/#/">странице</a> доступен интерфейс получения истории по инструменту.
-Есть поиск по тикеру и фильтр по типу инструмента. Доступны прямые ссылки, а также автоматически сгенерированный скрипт для выгрузки.
-Для получения исторических данных потребуется ввести <a href="https://russianinvestments.github.io/investAPI/token">токен доступа</a>.</p>
-<h3 id="_3">Метод загрузки исторических рыночных данных по инструменту в виде годового архива</h3>
-<p>Для загрузки исторических рыночных данных в виде архива по определенному инструменту необходимо передать <strong>GET</strong> запрос на url: <code>https://invest-public-api.tinkoff.ru/history-data</code> с указанными ниже параметрами, а также Bearer token'ом.</p>
+<p><a href="https://russianinvestments.github.io/invest-history-index-ui/#/">Интерфейс получения истории по инструменту </a></p>
+<p>На странице есть поиск по тикеру, фильтр по типу инструмента, прямые ссылки и автоматически сгенерированный скрипт для выгрузки.</p>
+<p>Чтобы получить исторические данные, нужно ввести <a href="https://russianinvestments.github.io/investAPI/token">токен доступа</a>.</p>
+<h3 id="_3">Метод загрузки исторических рыночных данных по инструменту</h3>
+<p>Чтобы получить исторические рыночные данные в виде архива по определённому инструменту, отправьте GET-запрос на URL <code>https://invest-public-api.tinkoff.ru/history-data</code> с указанными ниже параметрами и Bearer-токеном.</p>
 <h4 id="gethistoryrequest">GetHistoryRequest</h4>
 <table>
 <thead>
@@ -2543,12 +2543,12 @@
 <tr>
 <td style="text-align: left;">figi</td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">[deprecated]Figi-идентификатор инструмента по которому запрашивается история рыночных данных</td>
+<td style="text-align: left;">[deprecated] FIGI-идентификатор инструмента, по которому запрашивается история рыночных данных</td>
 </tr>
 <tr>
 <td style="text-align: left;">instrument_id</td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">Идентификатор инструмента, принимает значения Figi или instrument_uid</td>
+<td style="text-align: left;">Идентификатор инструмента, принимает значения <code>FIGI</code> или <code>instrument_uid</code></td>
 </tr>
 <tr>
 <td style="text-align: left;">year</td>
@@ -2570,7 +2570,7 @@
 <tr>
 <td style="text-align: left;">data</td>
 <td style="text-align: left;">Byte</td>
-<td style="text-align: left;">Zip-архив исторических минутных свечей за год</td>
+<td style="text-align: left;">ZIP-архив исторических минутных свечей за год</td>
 </tr>
 </tbody>
 </table>
@@ -2578,11 +2578,11 @@
 <pre><code>curl -X GET --location "https://invest-public-api.tinkoff.ru/history-data?figi=BBG00QKJSX05&amp;year=2022" \
 -H "Authorization: Bearer token"
 </code></pre>
-<h3 id="_5">Скрипт получения исторических рыночных данных по инструментам в виде годового архива</h3>
-<p>Для загрузки истории котировок за весь доступный период можно воспользоваться специальным подготовленным <a href="https://github.com/RussianInvestments/investAPI/blob/main/src/marketdata/download_md.sh">скриптом</a>, а так же <a href="https://github.com/RussianInvestments/investAPI/blob/main/src/marketdata/figi.txt">справочником figi</a>.
-Вы можете создать свой справочник необходимых Вам figi по аналогии с представленным, назвать его figi.txt и сохранить в той же директории, где сохраните скрипт.</p>
-<p>Перед запуском скрипта <code>download_md.sh</code> необходимо добавить <a href="https://russianinvestments.github.io/investAPI/token">токен доступа</a> в специальный параметр.</p>
-<h4 id="download_mdsh">Параметры настройки скрипта download_md.sh</h4>
+<h3 id="_5">Скрипт получения исторических рыночных данных по инструментам</h3>
+<p>Чтобы получить историю котировок за весь доступный период, можно воспользоваться специальным <a href="https://github.com/RussianInvestments/investAPI/blob/main/src/marketdata/download_md.sh">скриптом</a> и <a href="https://github.com/RussianInvestments/investAPI/blob/main/src/marketdata/figi.txt">справочником FIGI</a>.</p>
+<p>Также вы можете создать свой справочник нужных FIGI по аналогии с представленным, назвать его <code>figi.txt</code> и сохранить в той же директории, где сохраните скрипт.</p>
+<p>Перед запуском скрипта <code>download_md.sh</code> нужно добавить <a href="https://russianinvestments.github.io/investAPI/token">токен доступа</a> в параметр <code>token</code>.</p>
+<h4 id="download_mdsh">Параметры настройки скрипта <code>download_md.sh</code></h4>
 <table>
 <thead>
 <tr>
@@ -2593,7 +2593,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">figi</td>
-<td style="text-align: left;">Имя файла *.txt в котором хранятся figi по которым необходимо получить годовые архивы исторических данных</td>
+<td style="text-align: left;">Имя файла *.txt с FIGI, по которым нужно получить годовые архивы исторических данных</td>
 </tr>
 <tr>
 <td style="text-align: left;">token</td>
@@ -2602,18 +2602,21 @@
 </tbody>
 </table>
 <h4 id="_6">Результат работы скрипта</h4>
-<p>В результате успешного выполнения скрипта в директории, откуда запущен скрипт, будут сохранены zip-архивы, разбитые по инструментам и годам исторических рыночных данных.
-Порядок следования полей в выходном файле:</p>
+<p>Когда скрипт успешно исполнен, в директорию, откуда запущен скрипт, будут сохранены ZIP-архивы. Они разбиваются по инструментам и годам исторических рыночных данных.</p>
+<p>Порядок полей в выходном файле:</p>
 <ul>
-<li>Идентификатор инструмента (UID)</li>
-<li>Дата и время начала свечи (UTC)</li>
-<li>Цена открытия (open)</li>
-<li>Цена закрытия (close)</li>
-<li>Максимальная цена за интервал (high)</li>
-<li>Минимальная цена за интервал (low)</li>
-<li>Объем в лотах (volume)</li>
+<li><strong>UID</strong> — идентификатор инструмента.</li>
+<li><strong>UTC</strong> — дата и время начала свечи.</li>
+<li><strong>open</strong> — цена открытия.</li>
+<li><strong>close</strong> — цена закрытия.</li>
+<li><strong>high</strong> — максимальная цена за интервал.</li>
+<li><strong>low</strong> — минимальная цена за интервал.</li>
+<li><strong>volume</strong> — объём в лотах.</li>
 </ul>
-<p><strong>Важно!!!</strong> Просим обратить внимание на то, что данные в архиве обновляются раз в сутки, как правило ночью, соответственно текущего дня в архиве не будет.</p>
+<blockquote>
+<p><strong>Важно</strong> <br>
+Данные в архиве обновляются один раз в день — как правило, ночью. Текущего дня в архиве не будет.</p>
+</blockquote>
 
 
 
