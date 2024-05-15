@@ -2687,9 +2687,9 @@
 <h3 id="_4">Облигации</h3>
 <p>Пункты цены для котировок облигаций — это проценты номинала облигации. Формулы расчёта:</p>
 <ul>
-<li><p>Пункты в валюту: <strong>price</strong> / 100 <em> <em>*nominal</em></em>.</p>
+<li><p>Пункты в валюту: <strong>price</strong> / 100 * <strong>nominal</strong>.</p>
 </li>
-<li><p>Пункты в валюту с учётом НКД: <strong>price</strong> / 100 <em> <strong>nominal</strong> + <em>*current_nkd</em></em>. </p>
+<li><p>Пункты в валюту с учётом НКД: <strong>price</strong> / 100 * <strong>nominal</strong> + <strong>current_nkd</strong>. </p>
 <p> НКД — накопленный купонный доход. Может возвращаться в параметрах <code>current_nkd</code> или <code>aci_value</code>. </p>
 </li>
 </ul>
