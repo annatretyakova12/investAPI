@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../table_order_currency/">
+        <link rel="prev" href="../orders_state_stream/">
       
       
         <link rel="next" href="../head-operations/">
@@ -818,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../weekend.md" class="md-nav__link">
+      <a href="../weekend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -839,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../held_instruments.md" class="md-nav__link">
+      <a href="../held_instruments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tinkoff_fund.md" class="md-nav__link">
+      <a href="../tinkoff_fund/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1580,7 +1580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../orders_state_stream.md" class="md-nav__link">
+      <a href="../orders_state_stream/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2009,7 +2009,7 @@
         
   
   <span class="md-ellipsis">
-    Получение исторических рыночных данных
+    Исторические рыночные данные
   </span>
   
 
@@ -2030,7 +2030,7 @@
         
   
   <span class="md-ellipsis">
-    Методы работы с индикаторами технического анализа
+    Работа с индикаторами технического анализа
   </span>
   
 
@@ -2608,7 +2608,7 @@
 <p>Сейчас <code>order_id</code> используется только как ключ идемпотентности и не прокидывается в другие сущности системы.
 В будущем мы планируем добавить отображение переданного ключа в операциях.</p>
 <h3 id="order_id_1">Сколько хранится ключ идемпотентности (<code>order_id</code>) на стороне брокера?</h3>
-<p>Ключ хранится год, но пока мы не может дать гарантию его сохранности. Сейчас подразумевается полная уникальность переданного <code>order_id</code> в разрезе номера счёта — <code>account_id</code>.</p>
+<p>Ключ хранится один месяц, но пока мы не может дать гарантию его сохранности. Сейчас подразумевается полная уникальность переданного <code>order_id</code> в разрезе номера счёта — <code>account_id</code>.</p>
 <h3 id="quantity-postorder">Что передавать в параметре <code>quantity</code> метода <a href="/investAPI/orders#postorder">PostOrder</a>? Количество бумаг или количество лотов? <a id="4.4"></a></h3>
 <p>Требуемое количество лотов. </p>
 <p>У многих инструментов <a href="/investAPI/glossary#lot">лотность</a> не равна единице — учитывайте это при выставлении торговых поручений. </p>
