@@ -2387,8 +2387,8 @@
 <p><a href="https://www.tinkoff.ru/invest/account/help/trade-on-bs/bids/">Подробнее про типы стоп-заявок</a></p>
 <h2 id="-_1">Выставить стоп-заявку</h2>
 <p>Для выставления стоп-заявки используйте метод <a href="/investAPI/stoporders#poststoporder">PostStopOrder</a>.</p>
-<p>Обратите внимание на параметр <code>expiration_type</code> — он отвечает за время жизни (экспирации) заявки. Например,
-значение <code>GoodTillCancel</code> говорит о том, что заявка будет активна до отмены, а <code>GoodTillDate</code> — до определённой даты (параметр <code>expire_date</code>).</p>
+<p>Обратите внимание на параметр <code>expiration_type</code> — он отвечает за время жизни (экспирации) заявки.</p>
+<p>Например, значение <code>GoodTillCancel</code> говорит о том, что заявка будет активна до отмены, а <code>GoodTillDate</code> — до определённой даты (параметр <code>expire_date</code>).</p>
 <h2 id="-_2">Получить список активных стоп-заявок</h2>
 <p>Для получения полного списка стоп-заявок рекомендуем использовать метод <a href="/investAPI/stoporders#getstoporders">GetStopOrders</a>.</p>
 <p>Обратите внимание: метод вернёт только стоп-заявки, которые ещё не были конвертированы в 
